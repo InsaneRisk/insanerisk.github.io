@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     
     
-    <title>git常用指令 | Risk_Y的博客</title>
+    <title>No title | Risk_Y的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="指令">
+    <meta name="keywords" content>
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/style.css?v=1.4.1">
@@ -141,7 +141,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>git常用指令</span>
+            <span></span>
             
         </div>
         
@@ -154,15 +154,13 @@
 <header class="content-header post-header">
     <img src="/img/banner.jpg" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">git常用指令</h1>
+        <h1 class="title"></h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-02-21T12:40:48.429Z" itemprop="datePublished" class="page-time">
+                <time datetime="2019-02-21T12:16:11.463Z" itemprop="datePublished" class="page-time">
   2019-02-21
 </time>
 
-
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Git/">Git</a></li></ul>
 
             
         </h5>
@@ -187,15 +185,13 @@
 
 
 <div class="container body-wrap">
-    <article id="post-git常用指令" class="post-article article-type-post" itemprop="blogPost">
+    <article id="post-HTTP基本原理" class="post-article article-type-post" itemprop="blogPost">
       <div class="post-card">
-          <h1 class="post-card-title">git常用指令</h1>
+          <h1 class="post-card-title"></h1>
           <div class="post-meta">
-              <time class="post-time" title="2019-02-21 20:40:48" datetime="2019-02-21T12:40:48.429Z" itemprop="datePublished">2019-02-21</time>
+              <time class="post-time" title="2019-02-21 20:16:11" datetime="2019-02-21T12:16:11.463Z" itemprop="datePublished">2019-02-21</time>
 
               
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Git/">Git</a></li></ul>
-
 
 
               
@@ -207,8 +203,12 @@
           </div>
           <div class="post-content" id="post-content" itemprop="postContent">
               
-              <h3 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h3><h4 id="1-基本指令"><a href="#1-基本指令" class="headerlink" title="1.基本指令"></a>1.基本指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git init                            -- 新建git仓库      </span><br><span class="line">git add 文件/文件夹                  -- 将文件添加到缓存区中  </span><br><span class="line">git add -A                          -- 添加所有内容到缓存区中</span><br><span class="line">git stutas                          -- 查看git状态  </span><br><span class="line">git commit -m  ‘提交信息’            -- 将缓存区中的内容全部提交到git本地仓库中  </span><br><span class="line">git log                             -- 查看提交日志  </span><br><span class="line">git reset -- hard HEAD              -- 让工作目录中的内容和仓库中的内容保持一致  </span><br><span class="line">git reset --hard HEAD^              -- 回到上一个版本  </span><br><span class="line">git reset -- hard 版本号             -- 回到指定的版本  </span><br><span class="line">git checkout -- 文件名               -- 从暂存区中恢复工作目录中的内容</span><br><span class="line">                                       (让工作区中的指定文件，回到上次提交的时候的状态) </span><br><span class="line">git clone &lt;url&gt;                      -- 将服务器上的项目(仓库)克隆</span><br><span class="line">                                       (使用https地址需要输入密码，使用ssh地址需要添加公钥)  </span><br><span class="line">git remote add origin 地址           -- 关联远程仓库(只需要关联一次)</span><br><span class="line">git push [-u] origin master          -- 提交(-u在第一次提交分之的时候才用)</span><br></pre></td></tr></table></figure>
-<h4 id="2-分之管理"><a href="#2-分之管理" class="headerlink" title="2.分之管理"></a>2.分之管理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">创建仓库会默认给我们创建一个master分之,这个分之一般作为提交和发布分之;</span><br><span class="line">开发一般会自己创建一个develop分之，用来开发和测试;</span><br><span class="line">多人协作的时候还可能根据不同的人或者(不同的功能)创建不同的分之，用来独立开发。  </span><br><span class="line">常见分之： master(主要是合并develop), develop(主要合并下面的其他分支), 功能/人员分之(开发)  </span><br><span class="line">git branch [-a]                       -- 查看分之   </span><br><span class="line">git branch 分之名                     -- 创建分之   </span><br><span class="line">git checkout 分支名		      -- 切换分之      </span><br><span class="line">git checkout -b 分之名                -- 切换并创建新的分之   </span><br><span class="line">git diff 分之1 分之2	              -- 查看两个分之之间的差异  </span><br><span class="line">git merge 分之名		              -- 让当前分之和指定分之进行合并     </span><br><span class="line">注意: 切换分之、push、pull，这些操作前要保证工作区是clean  </span><br><span class="line">怎么避免冲突：不要发生多个分之对同一个文件在同一个版本下进行修改(和同伴确认和商量)</span><br></pre></td></tr></table></figure>
+              <h1 id="HTTP基本原理"><a href="#HTTP基本原理" class="headerlink" title="HTTP基本原理"></a>HTTP基本原理</h1><p>URI(Uniform Resource Identifier): 统一资源标志符</p>
+<p>URL(Universal Resource Locator): 统一资源定位符</p>
+<p>URN(Universal Resource Name): 统一资源名称</p>
+<p>Proxy-Connection<br>    当使⽤代理服务器的时候，这个就指明了代理服务器是否使⽤⻓链接。但是，数据在从client 到代理服务器，和从代理服务器到被请求的服务器之间如果存在信息差异的话，会造成信息请求不到，但是在⼤多数情况下，都还是能够成⽴的。</p>
+<p>Pragma<br>    防⽌⻚⾯被缓存, 和 cache-control类似的⼀个字段，⼀般爬⾍都写成 no-cache。</p>
+<p>Cookie<br>    同样是⼀个⽐较关键的字段，Cookie是 client 请求 服务器时，服务器会返回⼀个键值对样的数据给浏览器，下⼀次浏览器再访问这个域名下的⽹⻚时，就需要携带这些键值对数据在Cookie中，⽤来跟踪浏览器⽤户的访问前后路径。<br>    在爬⾍时，根据前次访问得到 cookie数据，然后添加到下⼀次的访问请求头中。<br>Host<br>    访问的服务器主机名，⽐如百度的 <a href="http://www.baidu.com。这个值在爬⾍时可以从" target="_blank" rel="noopener">www.baidu.com。这个值在爬⾍时可以从</a> 访问的 URI 中获得。<br>If-Modified-Since<br>    只有当所请求的内容在指定的⽇期之后⼜经过修改才返回它，否则返回304。其⽬的是为了提⾼访问效率。但是在爬⾍时，不设置这个值，⽽在增量爬取时才设置⼀个这样的值，⽤以更新信息。<br>Authorization<br>    当客户端接收到来⾃WEB服务器的 WWW-Authenticate 响应时，该头部来回应⾃⼰的身份验证信息给WEB服务器主要是授权验证确定符合服务器的要求这个在爬⾍时按需</p>
 
           </div>
           
@@ -216,12 +216,12 @@
     <div class="content">
         
 <span class="post-time">
-    最後更新時間：<time datetime="2019-02-23T06:08:22.809Z" itemprop="dateUpdated">2019-02-23 14:08:22</time>
+    最後更新時間：<time datetime="2019-01-22T02:35:37.450Z" itemprop="dateUpdated">2019-01-22 10:35:37</time>
 </span><br>
 
 
         
-        转载注明出处，原文地址：<a href="/2019/02/21/git常用指令/" target="_blank" rel="external">http://yoursite.com/2019/02/21/git常用指令/</a>
+        转载注明出处，原文地址：<a href="/2019/02/21/HTTP基本原理/" target="_blank" rel="external">http://yoursite.com/2019/02/21/HTTP基本原理/</a>
         
     </div>
     <footer>
@@ -241,8 +241,6 @@
           
           <div class="post-footer">
               
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li></ul>
-
               <div class="page-share-wrap">
     
 
@@ -250,7 +248,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/21/git常用指令/&title=《git常用指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/21/HTTP基本原理/&title=Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -262,7 +260,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/21/git常用指令/&title=《git常用指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/21/HTTP基本原理/&title=Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -288,18 +286,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="prev">
-      <a href="/2019/02/21/Hexo博客搭建/" id="post-prev" class="post-nav-link">
+      <a href="/2019/02/21/git常用指令/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Hexo博客搭建</h4>
+        <h4 class="title">git常用指令</h4>
       </a>
     </div>
   
 
   
     <div class="next">
-      <a href="/2019/02/21/HTTP基本原理/" id="post-next" class="post-nav-link">
+      <a href="/2019/02/21/hello-world/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">[no title]</h4>
+        <h4 class="title">Hello World</h4>
       </a>
     </div>
   
@@ -311,7 +309,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#git常用指令"><span class="post-toc-number">1.</span> <span class="post-toc-text">git常用指令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-基本指令"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.基本指令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-分之管理"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.分之管理</span></a></li></ol></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTTP基本原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTTP基本原理</span></a></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </div></div></aside>
@@ -411,7 +409,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/21/git常用指令/&title=《git常用指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/21/HTTP基本原理/&title=《No title》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -423,7 +421,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/21/git常用指令/&title=《git常用指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/21/HTTP基本原理/&title=《No title》 — Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -435,7 +433,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNElEQVR42u3aQW7DMAwFUd//0i7QXRFEmU/JKUSNVkWc2nouwFIkrwuv+3fxb75+//Xze7iuJ5YMGTK2ZZDbjbeVXiVPj6kyZMg4gDEOsu9uPUaSrYzvRvYmQ4YMGbWgnG6LvyAZMmTI4AGXJHYkWfzn/xsyZMjYilE7TKZHVn63B8/iMmTI2JCRNga++fOD/Q0ZMmRswrhLi6R686W3YD8yZMhozRiPR6TjFySB4wklL73JkCGjN4MXv0hBv8YmCeiHe8qQIeMYBn/ME7/FqegQK0OGjEaMWn7FD7F807Wg/6HLIUOGjHYMMtwwX4bjbcj0tcqQIaMrg4e5+XSQb5QHaxkyZJzAWBChQcLHS3X8dciQIeMcRtponK93zb+sYMxChgwZ7Rh8wKtWkkuvBs0MGTJktGbwElttwGJVCohGMWTIkHEwozaWMTPkUXyiDBkymjLSJiJPGeOaX7je9jdkyJDRjjHe1qqmY+07ceiXIUNGa8Y4RKZtyLQ9UCvDyZAh4zQGL9DPFP1rBbgglZQhQ8YxjFpaxtkkTNdesQwZMnozUlLajCRBuTZmMfWXkSFDxiaMO1zkoFsbLEsHL/58IkOGjNaMtGX4dElunFAuaILKkCFjW0YtdHJ27WoccGXIkHEAo1YsW1V646/m7X1kyJAhY2KcotZaIEdoFMVlyJBxGIMfL9OtLD5ny5AhoymDNwN4aSwd45iqFMqQIaM1Y1X5jLcY09bCzIiGDBkyNmf8AC+2Qc+nySXuAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3awY6DMAxF0f7/TzPbkShwnw2ViG9WVVWCTxdWbOfzwWvbrf33R7///83+8/lTNy8ZMmS8lrGdLvIC8j3fnzz15Y0yZMgYwCBBkNR58bIwHQd/nAwZMmScHtd40Efs9L0yZMiQwRMrSaPpEVOGDBkyOkVsWpr2E/cjtbgMGTJeyOBd999/fmS+IUOGjFcxtnB1Wm+80RZHJUOGjKUZPMHxIxo5/MUFKmnwyZAhYwyDX/mqndD6KfswEhkyZCzK6F/2SoeU/FkyJJAhQ8YERm1rXo6SxN25bCFDhoyZjLu2TlMwH08eRiJDhoylGWRrEi5v1fG0WxxnypAhYyFGrcWfXt7qDA9I8SxDhowJjE6KJGmap05yAP2ypwwZMpZmkDRaa8CRkQNv2AUXMmTIkLEcI239k3A7Fyxqh1QZMmSszSCpjV99SEPs7CZDhow5jDRppkdGkjrTS2aHtbgMGTIGMIJ6Nxw01tp2BImCkCFDxssZvGXG22o8CLJDMDaQIUPGYEbtUMjLWn5wDGpxGTJkLM1IYen1i07BfPF7GTJkDGCkQ0c+aEwLV/6sDBkyJjC2cPHrX3Fzv9SGkyFDxgQGX2mx+sQFi1qKlyFDxhqMWrOeB5Qmx+LxUYYMGQMYaeLj6ZW38zhShgwZMnhKvatkrV1KkyFDhoxaMZk2y/hI4OJPkSFDxgBGZxhwftQj4aa/kSFDxjTGveeuTtD9RCxDhozlGH8DUbJQEaG5OQAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

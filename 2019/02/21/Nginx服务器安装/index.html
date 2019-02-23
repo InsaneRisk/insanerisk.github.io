@@ -7,7 +7,7 @@
     <title>Nginx服务器安装 | Risk_Y的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="服务器,Nginx">
+    <meta name="keywords" content="安装,配置">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/style.css?v=1.4.1">
@@ -207,22 +207,22 @@
           </div>
           <div class="post-content" id="post-content" itemprop="postContent">
               
-              <h2 id="Nginx服务器"><a href="#Nginx服务器" class="headerlink" title="Nginx服务器"></a>Nginx服务器</h2><h3 id="阿里云添加80端口"><a href="#阿里云添加80端口" class="headerlink" title="阿里云添加80端口"></a>阿里云添加80端口</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口</span><br><span class="line">![打开安全组设置](./img/aliyun0.png)  </span><br><span class="line">![](./img/aliyun2.png)</span><br><span class="line">![](./img/aliyun3.png)</span><br><span class="line">![](./img/aliyun4.png)</span><br></pre></td></tr></table></figure>
-<h3 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h3><h5 id="添加nginx存储库"><a href="#添加nginx存储库" class="headerlink" title="添加nginx存储库"></a>添加nginx存储库</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install epel-release</span><br></pre></td></tr></table></figure>
-<h5 id="安装nginx-1"><a href="#安装nginx-1" class="headerlink" title="安装nginx"></a>安装nginx</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
+              <h2 id="Nginx服务器"><a href="#Nginx服务器" class="headerlink" title="Nginx服务器"></a>Nginx服务器</h2><h3 id="阿里云添加80端口"><a href="#阿里云添加80端口" class="headerlink" title="阿里云添加80端口"></a>阿里云添加80端口</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">阿里云上默认只有一个22端口用来做远程登录，</span><br><span class="line">如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口</span><br><span class="line">![打开安全组设置](./img/aliyun0.png)  </span><br><span class="line">![](./img/aliyun2.png)</span><br><span class="line">![](./img/aliyun3.png)</span><br><span class="line">![](./img/aliyun4.png)</span><br></pre></td></tr></table></figure>
+<h3 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h3><h5 id="添加nginx存储库"><a href="#添加nginx存储库" class="headerlink" title="添加nginx存储库"></a>添加nginx存储库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install epel-release</span><br></pre></td></tr></table></figure>
+<h5 id="安装nginx-1"><a href="#安装nginx-1" class="headerlink" title="安装nginx"></a>安装nginx</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
 <h5 id="运行nginx"><a href="#运行nginx" class="headerlink" title="运行nginx"></a>运行nginx</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Nginx不会自行启动。要运行Nginx  </span><br><span class="line">systemctl start nginx</span><br></pre></td></tr></table></figure>
 <h5 id="nginx的运行命令"><a href="#nginx的运行命令" class="headerlink" title="nginx的运行命令"></a>nginx的运行命令</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl status nginx 查看nginx的状态  </span><br><span class="line">systemctl start/stop/enable/disable nginx 启动/关闭/设置开机启动/禁止开机启动</span><br></pre></td></tr></table></figure>
 <h5 id="系统启动时启动Nginx"><a href="#系统启动时启动Nginx" class="headerlink" title="系统启动时启动Nginx"></a>系统启动时启动Nginx</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
 <h5 id="如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信："><a href="#如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信：" class="headerlink" title="如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信："></a>如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=http </span><br><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=https</span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-<h3 id="nginx目录共享配置"><a href="#nginx目录共享配置" class="headerlink" title="nginx目录共享配置"></a>nginx目录共享配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">a) 在contOS目录中确定一个需要共享的文件夹，例如： /home/yuting  </span><br><span class="line">b) 打开 etc/nginx/nginx.conf 文件，设置server</span><br><span class="line">	#共享设置 - 在浏览器中输入服务器ip地址，会展示共享目录的文件列表</span><br><span class="line">	root /home/yuting;</span><br><span class="line">	location / &#123;</span><br><span class="line">	       autoindex on;</span><br><span class="line">	       autoindex_exact_size on;</span><br><span class="line">	       autoindex_localtime on;</span><br><span class="line">	&#125;  </span><br><span class="line">除了可以共享文件，还可以自定义页面</span><br><span class="line">	#自定义服务器页面</span><br><span class="line">	location / &#123;</span><br><span class="line">			root /home/yuting;</span><br><span class="line">			index index.html index.htm;</span><br><span class="line">	&#125;</span><br><span class="line">注意： 如果出现权限问题，可以修改目录的权限</span><br></pre></td></tr></table></figure>
-<h2 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在主机和从机上执行：`ssh-keygen`</span><br><span class="line">2.在从机上执行:  `scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub`</span><br><span class="line">(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</span><br><span class="line">3.在主机中的.ssh文件夹中创建authorized_keys文件： `touch authorized_keys` </span><br><span class="line">4.修改文件authorized_keys的权限: `chmod 600  authorized_keys`  </span><br><span class="line">5.将master.pub放进authorized_keys文件中:  `cat master.pub &gt;&gt;  authorized_keys`</span><br><span class="line">6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</span><br></pre></td></tr></table></figure>
+<h3 id="nginx目录共享配置"><a href="#nginx目录共享配置" class="headerlink" title="nginx目录共享配置"></a>nginx目录共享配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">a) 在contOS目录中确定一个需要共享的文件夹，例如： /home/yuting  </span><br><span class="line">b) 打开 etc/nginx/nginx.conf 文件，设置server</span><br><span class="line">  #共享设置 - 在浏览器中输入服务器ip地址，会展示共享目录的文件列表</span><br><span class="line">  location / &#123;</span><br><span class="line">    root /home/lhy;</span><br><span class="line">    autoindex on;</span><br><span class="line">    autoindex_exact_size on;</span><br><span class="line">    autoindex_localtime on;</span><br><span class="line">  &#125;  </span><br><span class="line">除了可以共享文件，还可以自定义页面</span><br><span class="line">  #自定义服务器页面</span><br><span class="line">  location / &#123;</span><br><span class="line">    root /home/yuting;</span><br><span class="line">    index index.html index.htm;</span><br><span class="line">  &#125;</span><br><span class="line">注意： 如果出现权限问题，可以修改目录的权限</span><br></pre></td></tr></table></figure>
+
           </div>
           
 <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-02-21T13:34:16.238Z" itemprop="dateUpdated">2019-02-21 21:34:16</time>
+    最後更新時間：<time datetime="2019-02-23T03:53:38.832Z" itemprop="dateUpdated">2019-02-23 11:53:38</time>
 </span><br>
 
 
@@ -247,7 +247,7 @@
           
           <div class="post-footer">
               
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/">Nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器/">服务器</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装/">安装</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/配置/">配置</a></li></ul>
 
               <div class="page-share-wrap">
     
@@ -305,7 +305,7 @@
     <div class="next">
       <a href="/2019/02/21/MySQL配置/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">MySQL配置</h4>
+        <h4 class="title">MySQL配置指令</h4>
       </a>
     </div>
   
@@ -317,7 +317,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Nginx服务器"><span class="post-toc-number">1.</span> <span class="post-toc-text">Nginx服务器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#阿里云添加80端口"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">阿里云添加80端口</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装nginx"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装nginx</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#nginx目录共享配置"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">nginx目录共享配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ssh密钥认证"><span class="post-toc-number">2.</span> <span class="post-toc-text">ssh密钥认证</span></a></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Nginx服务器"><span class="post-toc-number">1.</span> <span class="post-toc-text">Nginx服务器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#阿里云添加80端口"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">阿里云添加80端口</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装nginx"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装nginx</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#nginx目录共享配置"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">nginx目录共享配置</span></a></li></ol></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </div></div></aside>
@@ -376,7 +376,7 @@
     <div class="bottom">
         <p>
             <span>
-                Risk_Y &copy; 2017 - 2019
+                Risk_Y &copy; 2019
             </span>
         		
            	

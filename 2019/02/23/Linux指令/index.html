@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    
+    <title>Linux基本指令 | Risk_Y的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="指令">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.1">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Risk_Y</h5>
+          <a href="mailto:1242131192@qq.com" title="1242131192@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>2</span>
+            
+              <span>4</span>
+            
+              <span>2</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>1</span>
+            
+              <span>1</span>
+            
+              <span>9</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/codefine" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class>
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>Linux基本指令</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/banner.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">Linux基本指令</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-02-23T01:53:38.881Z" itemprop="datePublished" class="page-time">
+  2019-02-23
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left">
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-Linux指令" class="post-article article-type-post" itemprop="blogPost">
+      <div class="post-card">
+          <h1 class="post-card-title">Linux基本指令</h1>
+          <div class="post-meta">
+              <time class="post-time" title="2019-02-23 09:53:38" datetime="2019-02-23T01:53:38.881Z" itemprop="datePublished">2019-02-23</time>
+
+              
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+              
+
+              
+
+
+              
+          </div>
+          <div class="post-content" id="post-content" itemprop="postContent">
+              
+              <h3 id="连接云服务器"><a href="#连接云服务器" class="headerlink" title="连接云服务器"></a>连接云服务器</h3><h4 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在主机和从机上执行：ssh-keygen</span><br><span class="line">2.在从机上执行:  scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</span><br><span class="line">(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</span><br><span class="line">3.在主机中的.ssh文件夹中创建authorized_keys文件： touch authorized_keys`</span><br><span class="line">4.修改文件authorized_keys的权限: chmod 600  authorized_keys` </span><br><span class="line">5.将master.pub放进authorized_keys文件中:  cat master.pub &gt;&gt;  authorized_keys</span><br><span class="line">6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</span><br></pre></td></tr></table></figure>
+<h4 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​连接服务器：①ssh root@47.95.9.84   ②yes  ③输入密码密码</span><br><span class="line">​退出服务器：logout</span><br></pre></td></tr></table></figure>
+<h4 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.安装git-bush(已安装请忽略)</span><br><span class="line">2.打开git-bush</span><br><span class="line">3.在本机系统目录下输入指令: shh-keygen</span><br><span class="line">4.修改生成公钥-秘钥对名</span><br><span class="line">5.进入.ssh文件夹查看生成公钥，并复制</span><br><span class="line">6.密码登录连接服务器</span><br><span class="line">7.将公钥复制到需要做免密登录的服务器中</span><br><span class="line">8.重新连接服务器: ssh  root@ip地址</span><br></pre></td></tr></table></figure>
+<h3 id="Linux指令系统"><a href="#Linux指令系统" class="headerlink" title="Linux指令系统"></a>Linux指令系统</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令名称 [命名参数] [命令对象]</span><br></pre></td></tr></table></figure>
+<h3 id="文件名颜色的含义"><a href="#文件名颜色的含义" class="headerlink" title="文件名颜色的含义"></a>文件名颜色的含义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">​默认色代表普通文件。</span><br><span class="line">​绿色代表可执行文件。</span><br><span class="line">​红色代表tar包文件。    </span><br><span class="line">​蓝色代表目录文件。  </span><br><span class="line">​水红代表图象文件。</span><br><span class="line">​青色代表链接文件。</span><br><span class="line">​黄色代表设备文件。</span><br></pre></td></tr></table></figure>
+<h3 id="日常操作"><a href="#日常操作" class="headerlink" title="日常操作"></a>日常操作</h3><h4 id="1-cd命令-进入指定目录"><a href="#1-cd命令-进入指定目录" class="headerlink" title="1.cd命令(进入指定目录)"></a>1.cd命令(进入指定目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">​cd 文件目录       		-- 进入指定文件目录(~相对路径 — 绝对路径)</span><br><span class="line">​cd ..       	  		-- 返回上层目录</span><br><span class="line">​cd ~        	  		-- 返回根目录</span><br><span class="line">​cd /        	  		-- 进入系统根目录</span><br></pre></td></tr></table></figure>
+<h4 id="2-ls命令-查看文件"><a href="#2-ls命令-查看文件" class="headerlink" title="2.ls命令(查看文件)"></a>2.ls命令(查看文件)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​ls				-- 显示当前目录所有非隐藏文件</span><br><span class="line">​ls -a				-- 显示当前目录中的所有文件，包含隐藏文件</span><br><span class="line">​ls -l/lh			-- 显示文件及其详细信息</span><br><span class="line">ls -S/t				-- 显示文件并按大小、/时间排序</span><br><span class="line">​ls -R			 	-- 递归显示目录中的文件</span><br></pre></td></tr></table></figure>
+<h4 id="3-pwd命令-显示当前目录"><a href="#3-pwd命令-显示当前目录" class="headerlink" title="3.pwd命令(显示当前目录)"></a>3.pwd命令(显示当前目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​pwd</span><br></pre></td></tr></table></figure>
+<h4 id="4-mkdir命令-创建目录"><a href="#4-mkdir命令-创建目录" class="headerlink" title="4.mkdir命令(创建目录)"></a>4.mkdir命令(创建目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">​mkdir  目录			-- 创建空目录</span><br><span class="line">​mkdir -m 权限 目录		-- 创建一个带权限的目录</span><br><span class="line">​mkdir -p 目录1/目录2		-- 创建目录1且在目录1下创建目录2</span><br><span class="line">​mkdir -v 目录			-- 创建目录并显示信息</span><br></pre></td></tr></table></figure>
+<h4 id="5-touch命令-创建文件"><a href="#5-touch命令-创建文件" class="headerlink" title="5.touch命令(创建文件)"></a>5.touch命令(创建文件)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​touch 文件名			-- 新建文件</span><br></pre></td></tr></table></figure>
+<h4 id="6-打开文件"><a href="#6-打开文件" class="headerlink" title="6.打开文件"></a>6.打开文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​vim/vi 文件名			-- 打开文件</span><br></pre></td></tr></table></figure>
+<h4 id="7-查看文件内容"><a href="#7-查看文件内容" class="headerlink" title="7.查看文件内容"></a>7.查看文件内容</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​cat 文件名			-- 查看文件</span><br></pre></td></tr></table></figure>
+<h4 id="8-rm命令-删除文件-目录"><a href="#8-rm命令-删除文件-目录" class="headerlink" title="8.rm命令(删除文件/目录)"></a>8.rm命令(删除文件/目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">​rm 文件名			-- 删除文件</span><br><span class="line">​rm -r 目录			-- 删除目录</span><br><span class="line">​rm -f 文件/目录			-- 强制删除文件/删除目录</span><br></pre></td></tr></table></figure>
+<h4 id="9-rmdir命令-删除空目录"><a href="#9-rmdir命令-删除空目录" class="headerlink" title="9.rmdir命令(删除空目录)"></a>9.rmdir命令(删除空目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​rmdir 目录名			-- 删除空目录(只能删除空目录)</span><br></pre></td></tr></table></figure>
+<h4 id="10-cp命令-拷贝"><a href="#10-cp命令-拷贝" class="headerlink" title="10.cp命令(拷贝)"></a>10.cp命令(拷贝)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">​cp 文件1 文件2			-- 将文件1的内容拷贝到文件2，</span><br><span class="line">				   如果文件2不存在会先创建，再将内容拷贝到文件2中</span><br><span class="line">​cp -r 文件/目录1 目录2		-- 将文件/目录1拷贝到目录2中</span><br></pre></td></tr></table></figure>
+<h4 id="11-mv命令-移动-不能加’-r’进行目录操作"><a href="#11-mv命令-移动-不能加’-r’进行目录操作" class="headerlink" title="11.mv命令(移动,不能加’-r’进行目录操作)"></a>11.mv命令(移动,不能加’-r’进行目录操作)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">​mv 文件1 新目录			-- 将文件移动到新目录</span><br><span class="line">​mv 目录名 新目录			-- 将文件移动到新目录</span><br><span class="line">​mv 文件名1 文件名2		-- 将文件重命名为文件名2</span><br><span class="line">​注意: mv指令不能加-r来操作目录</span><br></pre></td></tr></table></figure>
+<h4 id="12-history命令-查看输入过的命令"><a href="#12-history命令-查看输入过的命令" class="headerlink" title="12.history命令(查看输入过的命令)"></a>12.history命令(查看输入过的命令)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​history</span><br></pre></td></tr></table></figure>
+<h4 id="13-软链接-快捷方式-硬链接-了解"><a href="#13-软链接-快捷方式-硬链接-了解" class="headerlink" title="13.软链接(快捷方式)/硬链接(了解)"></a>13.软链接(快捷方式)/硬链接(了解)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​ln -s 路径			-- 保存路径，通过软链接可以进入文件或目录，</span><br><span class="line">				   删除软链接并不影响源文件，删除源文件，软链接将无效</span><br><span class="line">​ln				-- 生产一个文件或目录与原文件或目录进行关联，</span><br><span class="line">				   删除硬链接的时候原文件或目录不会被删除，</span><br><span class="line">				   删除源文件硬链接还会存在，但会变为普通文件</span><br></pre></td></tr></table></figure>
+<h4 id="14-文件操作快捷方式"><a href="#14-文件操作快捷方式" class="headerlink" title="14.文件操作快捷方式"></a>14.文件操作快捷方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+Insert			-- 复制命令</span><br><span class="line">Shift+Insert			-- 粘贴命令</span><br><span class="line">​Ctrl + a			-- 回到行首</span><br><span class="line">Ctrl + e			-- 回到行尾</span><br><span class="line">Ctrl + w			-- 向左删除一个单词</span><br><span class="line">Ctrl + u			-- 向左删除全部</span><br><span class="line">Ctrl + v			-- 向右删除全部</span><br><span class="line">Ctrl + y			-- 粘贴上次删除的内容</span><br><span class="line">Ctrl + l			-- 清屏</span><br></pre></td></tr></table></figure>
+<h3 id="进程相关指令-用得较少"><a href="#进程相关指令-用得较少" class="headerlink" title="进程相关指令(用得较少)"></a>进程相关指令(用得较少)</h3><h4 id="1-ps指令-查看进程状态"><a href="#1-ps指令-查看进程状态" class="headerlink" title="1.ps指令(查看进程状态)"></a>1.ps指令(查看进程状态)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">​ps				-- 进程状态</span><br><span class="line">​ps -aux  或者  ps ex		-- 查看进程</span><br><span class="line">​ps -aux|grep 进程名		-- 查看指定进程</span><br><span class="line">​ps grep  进程ID</span><br></pre></td></tr></table></figure>
+<h4 id="2-top-能实时监测当前系统里所有进程的状态"><a href="#2-top-能实时监测当前系统里所有进程的状态" class="headerlink" title="2.top(能实时监测当前系统里所有进程的状态)"></a>2.top(能实时监测当前系统里所有进程的状态)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​top				-- 动态监控进程</span><br><span class="line">​top  -p PID1,PID2,….		-- 动态监控指定进程</span><br></pre></td></tr></table></figure>
+<p>​    </p>
+<h4 id="3-free-释放"><a href="#3-free-释放" class="headerlink" title="3.free(释放)"></a>3.free(释放)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​free -单位			-- 以指定单位查看内存, </span><br><span class="line">				   例如: free -m (以Mb为单位显示内存状况), -g,  -k等！</span><br></pre></td></tr></table></figure>
+<h4 id="4-kill-关闭进程"><a href="#4-kill-关闭进程" class="headerlink" title="4.kill(关闭进程)"></a>4.kill(关闭进程)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​kill 进程号			-- 杀死指定的进程</span><br><span class="line">​kill -1/-9/-15			-- -1(HUP)不间断重启，-9(KILL)强制杀死进程,-15(TERM)正常终止进程</span><br><span class="line">​pkill  进程名			-- 按名字处理进程</span><br><span class="line">​killall 进程名			-- 处理名字匹配的进程</span><br><span class="line">​uptime				-- 查看系统状态</span><br></pre></td></tr></table></figure>
+<h3 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h3><h4 id="1-user和group"><a href="#1-user和group" class="headerlink" title="1.user和group"></a>1.user和group</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">​一个系统可以有多个用户和多个分组； 一个分组中可以有多个用户，一个用户在不同的分组中(多对多)</span><br><span class="line">​users				-- 查看当前用户</span><br><span class="line">​groups 				-- 查看当前分组</span><br><span class="line">​groupadd  分组名			-- 添加分组</span><br><span class="line">useradd ‐G 分组列表 ‐m ‐s /bin/bash 用户名 -- 创建用户添加到指定的分组(在home创建相应的文件夹)</span><br><span class="line">usermod -G 分组列表 用户名	-- 修改分组</span><br><span class="line">passwd 用户名			-- 修改密码</span><br><span class="line">su  用户名			-- 切换用户身份</span><br><span class="line">sudo				-- 以管理员执行其他程序</span><br><span class="line">注意： a.在ubuntu需要将用户添加到sudo分组中，才能使用sudo以管理员的身份执行程序</span><br><span class="line">​      b.在centOS中需要先执行vi 指令进入sudoers文件中在指定的位置添加内容</span><br></pre></td></tr></table></figure>
+          </div>
+          
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2019-02-23T04:13:57.370Z" itemprop="dateUpdated">2019-02-23 12:13:57</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/02/23/Linux指令/" target="_blank" rel="external">http://yoursite.com/2019/02/23/Linux指令/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" alt="Risk_Y">
+            Risk_Y
+        </a>
+    </footer>
+</blockquote>
+
+          
+              <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+              
+          
+          <div class="post-footer">
+              
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li></ul>
+
+              <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+          </div>
+          
+              
+
+
+          
+      </div>
+      
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2019/02/21/vim编辑器之神/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">vim编辑器之神</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+      
+      
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#连接云服务器"><span class="post-toc-number">1.</span> <span class="post-toc-text">连接云服务器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ssh密钥认证"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">ssh密钥认证</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#密码登录"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">密码登录</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#免密登录"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">免密登录</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linux指令系统"><span class="post-toc-number">2.</span> <span class="post-toc-text">Linux指令系统</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文件名颜色的含义"><span class="post-toc-number">3.</span> <span class="post-toc-text">文件名颜色的含义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#日常操作"><span class="post-toc-number">4.</span> <span class="post-toc-text">日常操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-cd命令-进入指定目录"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">1.cd命令(进入指定目录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-ls命令-查看文件"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2.ls命令(查看文件)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-pwd命令-显示当前目录"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">3.pwd命令(显示当前目录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-mkdir命令-创建目录"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">4.mkdir命令(创建目录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-touch命令-创建文件"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">5.touch命令(创建文件)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6-打开文件"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">6.打开文件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-查看文件内容"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">7.查看文件内容</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#8-rm命令-删除文件-目录"><span class="post-toc-number">4.8.</span> <span class="post-toc-text">8.rm命令(删除文件/目录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#9-rmdir命令-删除空目录"><span class="post-toc-number">4.9.</span> <span class="post-toc-text">9.rmdir命令(删除空目录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#10-cp命令-拷贝"><span class="post-toc-number">4.10.</span> <span class="post-toc-text">10.cp命令(拷贝)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#11-mv命令-移动-不能加’-r’进行目录操作"><span class="post-toc-number">4.11.</span> <span class="post-toc-text">11.mv命令(移动,不能加’-r’进行目录操作)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#12-history命令-查看输入过的命令"><span class="post-toc-number">4.12.</span> <span class="post-toc-text">12.history命令(查看输入过的命令)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#13-软链接-快捷方式-硬链接-了解"><span class="post-toc-number">4.13.</span> <span class="post-toc-text">13.软链接(快捷方式)/硬链接(了解)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#14-文件操作快捷方式"><span class="post-toc-number">4.14.</span> <span class="post-toc-text">14.文件操作快捷方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进程相关指令-用得较少"><span class="post-toc-number">5.</span> <span class="post-toc-text">进程相关指令(用得较少)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-ps指令-查看进程状态"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">1.ps指令(查看进程状态)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-top-能实时监测当前系统里所有进程的状态"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2.top(能实时监测当前系统里所有进程的状态)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-free-释放"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">3.free(释放)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-kill-关闭进程"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">4.kill(关闭进程)</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#权限管理"><span class="post-toc-number">6.</span> <span class="post-toc-text">权限管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-user和group"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">1.user和group</span></a></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </div></div></aside>
+    
+  </article>
+  
+      <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起让每一份努力都变得有意义
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+      
+  
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.gitee.com" target="_blank">gitee</a>
+    </span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.coding.net" target="_blank">coding</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Risk_Y &copy; 2019
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3a226DMBBF0fz/T1OpT5UazD4zIRLj7aeIEvByJWcufr3wOH7H+srf62f3r6+f3fOxIUOGjMcyjuX4P+n1X8+e2XkvosqQIWMDxnqTXU+afJdMlL9LhgwZMsgmuw770s9k+WTIkCGjv+GmgWC6HDJkyJCRJpPpi3mJ7fZcXIYMGQ9kpI2Bb36+sb8hQ4aMhzCO0iAtyX7pLZiPDBkyRjNI8tnf5e4o4b3SHFqGDBmPZfADE+kmiwpkpZbAm5nIkCFjNIOEa3zDJcvBt+M4oZUhQ8ZQBi/9dwpz/e34gi1DhowNGLWgsNPsTEPSi7RWhgwZ2zDSMj0J6XhBrYaRIUPGDgweqPHHpaEhn1acbMuQIWMQozZF3m7kxzXWz79IemXIkDGa0ZkWXw7Cu+V3Q4YMGQ9npJtpLcUlC8EDzTezlSFDxmhGPx1NG5y8YRm/V4YMGUMZtdCNJ6L8W60hQ4aM0Yx00+Sp5gd+B9I5yJAhYzSDbK9kpElvLXlG/xMZMmSMY/CSVnpnujW32pYyZMjYgMHT1xqPtzyLWaoMGTJGM/gjeILaaTbUioMyZMiYyqilqST15SHj+h6S7sqQIWM2o9MfDA5shYkuDzRjmAwZMh7LSEM68tB+oS2dgwwZMnZg8IZBrd7VD/IuYDJkyJCBy/qdI638aUG9UIYMGZsx0qOofCq35NkyZMgYx+DHUgmjdkQjXSYZMmTsw0g3Zd7sTBuf/aWRIUPGOMYPp10i4GTzfXEAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.4.1"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.4.1"></script>
+
+<!-- third-party -->
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.4.1"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
