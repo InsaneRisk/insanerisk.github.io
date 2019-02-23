@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    
+    <title>Python之运算符 | Risk_Y的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="基础">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.1">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Risk_Y</h5>
+          <a href="mailto:1242131192@qq.com" title="1242131192@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>2</span>
+            
+              <span>4</span>
+            
+              <span>2</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>1</span>
+            
+              <span>1</span>
+            
+              <span>9</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/codefine" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class>
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>Python之运算符</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/banner.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">Python之运算符</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-02-23T06:45:29.533Z" itemprop="datePublished" class="page-time">
+  2019-02-23
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left">
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-Python之运算符" class="post-article article-type-post" itemprop="blogPost">
+      <div class="post-card">
+          <h1 class="post-card-title">Python之运算符</h1>
+          <div class="post-meta">
+              <time class="post-time" title="2019-02-23 14:45:29" datetime="2019-02-23T06:45:29.533Z" itemprop="datePublished">2019-02-23</time>
+
+              
+
+
+              
+
+              
+
+
+              
+          </div>
+          <div class="post-content" id="post-content" itemprop="postContent">
+              
+              <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>python支持:数学运算符、比较运算符、逻辑运算符、赋值运算符、（位运算符）</p>
+<h4 id="数学运算符-加-减-乘-除-整除-取余-幂运算"><a href="#数学运算符-加-减-乘-除-整除-取余-幂运算" class="headerlink" title="数学运算符: +(加),-(减),*(乘),/(除),//(整除),%(取余),**(幂运算)"></a>数学运算符: +(加),-(减),*(乘),/(除),//(整除),%(取余),**(幂运算)</h4><p>a. 其中+、/、*、/和数学中的加减乘除一模一样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(10+20)</span><br></pre></td></tr></table></figure></p>
+<p>b. //（整除），数字1//数字2 –&gt; 让数字1除以数字2，结果只取整数部分<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">练习：获取数字234中的百位上的数</span><br><span class="line">print(234 // 100)</span><br></pre></td></tr></table></figure></p>
+<p>c.%(取余)，求余数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(5 % 2)</span><br><span class="line">print(10 % 4)</span><br></pre></td></tr></table></figure></p>
+<p><em>应用一：获取一个数的个位数</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(234 % 10)</span><br></pre></td></tr></table></figure></p>
+<p><em>应用二：判断一个数的奇偶性，查看结果为1(奇数)还是0(偶数)</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(234%2)</span><br></pre></td></tr></table></figure></p>
+<p>d.**(幂运算)，x**y –&gt; x的y次方<br>运算符的运算对象不一定非得是数字，也可以是存储数据的变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(2**3)</span><br><span class="line">print(10**4)</span><br><span class="line">print(16 ** (1/2))</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-比较运算符：-gt-lt-gt-lt"><a href="#2-比较运算符：-gt-lt-gt-lt" class="headerlink" title="2.比较运算符：&gt;, &lt;, ==, &gt;=, &lt;=, !="></a>2.比较运算符：&gt;, &lt;, ==, &gt;=, &lt;=, !=</h4><p>所有的比较运算的结果都是布尔值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">print(10&gt;20)   # False</span><br><span class="line">print(10&lt;20)   # True</span><br><span class="line">print(10==20)  # False</span><br><span class="line">print(10!=20)  # True</span><br><span class="line">print(10&gt;=20)  # False</span><br><span class="line">print(10&lt;=20)  # True</span><br></pre></td></tr></table></figure></p>
+<p><strong><em>补充：is的使用</em></strong><br>*个变量有三要素，分别是：类型（变量中存储的数据的类型）、值（变量存储的数据）、地址（变量真正存储的内容，数据地址）</p>
+<ul>
+<li>类型 - type(变量)</li>
+<li>值   - 直接使用变量，就是使用值()</li>
+<li>地址 - id(变量) </li>
+<li>==  和 is的区别</li>
+</ul>
+<ul>
+<li>==: 判断值是否相等</li>
+<li>is: 判断的是地址是否相等*<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num = 100</span><br><span class="line">print(type(num), num, id(num))</span><br><span class="line">list1 = [1, 2]</span><br><span class="line">list2 = [1, 2]</span><br><span class="line">list3 = list1</span><br><span class="line">print(list1, list2)</span><br><span class="line">print(id(list1), id(list2))</span><br><span class="line">print(list1 == list2, list1 is list2)</span><br><span class="line">print(list1 == list3, list1 is list3)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="3-逻辑运算符-and-逻辑与-or-逻辑或-not-逻辑非-；"><a href="#3-逻辑运算符-and-逻辑与-or-逻辑或-not-逻辑非-；" class="headerlink" title="3.逻辑运算符: and(逻辑与),or(逻辑或),not(逻辑非)；"></a>3.逻辑运算符: and(逻辑与),or(逻辑或),not(逻辑非)；</h4><p>逻辑运算的运算对象和运算结果都是布尔值<br>a.and - 如果值1 and 值2 –&gt;入股了两个True结果就是True，否则结果是F相当于生活逻辑中”并且”；<br><strong><em>短路操作：</em></strong> <em>如果第一个条件是False，就不会判断第二个条件，整个结果直接为False<br>**</em>应用：<strong><em>要求多个条件同时满足的时候，后可以使用逻辑运算符和运算</em><br>b. or - 值1 or 值2 –&gt;如果两个都为False结果才是False，否则结果是True；相当于逻辑中的‘或’<br>*</strong>短路操作：<strong><em> </em>如果第一个条件是True，就不会判断后面的条件，直接判断运算结果为True<br>*</strong>应用：<em>**要求多个条件只要满足一个条件，就是使用逻辑或运算</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">True or True  -&gt;True</span><br><span class="line">True or False -&gt;True</span><br><span class="line">False or False -&gt;False</span><br><span class="line"></span><br><span class="line">练习：如果考试成绩小于60分，或者上课不听讲就是降班</span><br><span class="line">grade = 54</span><br><span class="line">is_not_in_class = False</span><br><span class="line">print(&apos;是否降班：&apos;, grade &lt; 60 or is_not_in_class)</span><br></pre></td></tr></table></figure></p>
+<p>c. not 值1  –&gt;对值1进行否定/取反（不是、否定）结论<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">not True -&gt; False</span><br><span class="line">not False -&gt; True</span><br><span class="line">年龄不小于10</span><br><span class="line">age = 20</span><br><span class="line">print(not age &lt; 10)</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-赋值运算符："><a href="#4-赋值运算符：" class="headerlink" title="4. 赋值运算符： =, +=, -=, /=, //=, %=, **="></a>4. 赋值运算符： =, +=, -=, /=, //=, %=, **=</h4><p>所有的赋值运算符，要求赋值符号的左边必须是变量；右边是有结果的（是值）<br>a. 变量 = 结果 –&gt; 将结果赋给变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = 100</span><br><span class="line">num2 = num   #变量给变量赋值，赋值的是变量的值得地址，不是变量的地址</span><br></pre></td></tr></table></figure></p>
+<p>b. +=, -=, /=, //=, %=, *<em>=
+</em>复合赋值运算符要求赋值符号的左边除了是变量以外，还要求这个变量已经被赋过值<br>变量 += 数字  –&gt; 变量 = 变量 +数字 （将变量原来的值加上指定的数字以后的新值再重新赋给变量）*<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num3 = 2</span><br><span class="line">num3 += 10   # num3 = num3 +10</span><br><span class="line">print(num3)  # 12</span><br><span class="line">num3 -= 3    # num3 = num3 - 3</span><br><span class="line">print(num3)  # 9</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-运算符的优先级"><a href="#5-运算符的优先级" class="headerlink" title="5.运算符的优先级"></a>5.运算符的优先级</h4><p>数学运算符 &gt; 比较运算符 &gt; 逻辑运算符 &gt; 赋值运算符<br>数学运算符中 *<em> &gt; </em>, /, %, // &gt; +, -<br><em>优先级高的先算，优先级低的后算。如果有（），先算（）里面（所有符号都是英文）</em></p>
+
+          </div>
+          
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2019-02-23T07:08:52.326Z" itemprop="dateUpdated">2019-02-23 15:08:52</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/02/23/Python之运算符/" target="_blank" rel="external">http://yoursite.com/2019/02/23/Python之运算符/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" alt="Risk_Y">
+            Risk_Y
+        </a>
+    </footer>
+</blockquote>
+
+          
+              <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+              
+          
+          <div class="post-footer">
+              
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li></ul>
+
+              <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Python之运算符/&title=《Python之运算符》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Python之运算符/&title=《Python之运算符》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+          </div>
+          
+              
+
+
+          
+      </div>
+      
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2019/02/23/Python之面试题/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Python之面试题</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2019/02/23/Python之数据类型/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python之数据类型</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+      
+      
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#运算符"><span class="post-toc-number">1.</span> <span class="post-toc-text">运算符</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#数学运算符-加-减-乘-除-整除-取余-幂运算"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">数学运算符: +(加),-(减),*(乘),/(除),//(整除),%(取余),**(幂运算)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-比较运算符：-gt-lt-gt-lt"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.比较运算符：&gt;, &lt;, ==, &gt;=, &lt;=, !=</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-逻辑运算符-and-逻辑与-or-逻辑或-not-逻辑非-；"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.逻辑运算符: and(逻辑与),or(逻辑或),not(逻辑非)；</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-赋值运算符："><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4. 赋值运算符： =, +=, -=, /=, //=, %=, **=</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-运算符的优先级"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5.运算符的优先级</span></a></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </div></div></aside>
+    
+  </article>
+  
+      <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起让每一份努力都变得有意义
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+      
+  
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.gitee.com" target="_blank">gitee</a>
+    </span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.coding.net" target="_blank">coding</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Risk_Y &copy; 2019
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Python之运算符/&title=《Python之运算符》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Python之运算符/&title=《Python之运算符》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aMW7DMAwF0Nz/0u7SoUAS+5NMClh6mgpHifQ8sBSpxyMex5vx99N385/nPH96/vxjAwMD47aM43QkCyTP899PvvViRQwMjA0YySYmG+qF78KLw8DAwBjPOU8HJ+tiYGBgJIudH1zzFBMDAwPjnFEtqCVltXxbCftjZ3EMDIwbMvKq+////ZX+BgYGxq0YR3H0DqhJstjbz+93MTAwlmbkAa5XLJsH7sJ+MDAwNmDkV7iqjcm8STm6KIaBgbEBY36YTIJynhSWmxMYGBiLMiaHyeryvSQySjQxMDCWZlSTv2TrSanuK8kiBgbGoox5+azXYTxPHMvXKTAwMLZknBfUEmS+9cmuXmS4GBgYyzEmCV+1xDbZejPPxcDAWILxqVZiNb2rtjkvfhkDA2NLRh5qc3a1kVk4SGNgYCzNyA+oSbk/D8RVWOEIjYGBsRyj2oacpHrJtpL4+fYQi4GBsShjXhqrIqvsQssBAwNjaUa+WO/yxKTQVr6KgYGBsShj0mLs1bt6V9Au5mNgYGzDyAtkeUGt2v7svSwMDIwdGL3ANz+IPuJxsRYGBsaijKM48rJXrwyX/AO4aGFiYGAsx+gFu3xOspU8WcTAwNiZ0SvW92Z+NuCWb3xgYGDcnFENfHnqljcy89CPgYGBUb02UV0+CaPV5xgYGBiTIn6egPZaERgYGPswkqNp7zLEN1qbGBgYuzEmiV11geQ15eU5DAyMDRg/PXl0cmud2MAAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.4.1"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.4.1"></script>
+
+<!-- third-party -->
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.4.1"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
