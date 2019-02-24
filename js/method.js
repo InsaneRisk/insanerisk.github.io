@@ -36,7 +36,8 @@ $.extend({
 			fixed: function (top) {
 				if (top >= bannerH - headerH) {
 					toc.css({
-						'left': card.offset().left + card.outerWidth(true) + 40
+						// 'left': card.offset().left + card.outerWidth(true) + 40
+						'left': 1190 + 'px'
 					});
 					toc.addClass('fixed');
 				} else {
