@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    
+    <title>MySQL基础语法 | Risk_Y的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.1">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Risk_Y</h5>
+          <a href="mailto:1242131192@qq.com" title="1242131192@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>2</span>
+            
+              <span>4</span>
+            
+              <span>2</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>1</span>
+            
+              <span>1</span>
+            
+              <span>9</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/codefine" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class>
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class>
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>MySQL基础语法</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/banner.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">MySQL基础语法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-02-25T12:00:33.536Z" itemprop="datePublished" class="page-time">
+  2019-02-25
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/MySQL/">MySQL</a></li></ul>
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left">
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-MySQL基础语法" class="post-article article-type-post" itemprop="blogPost">
+      <div class="post-card">
+          <h1 class="post-card-title">MySQL基础语法</h1>
+          <div class="post-meta">
+              <time class="post-time" title="2019-02-25 20:00:33" datetime="2019-02-25T12:00:33.536Z" itemprop="datePublished">2019-02-25</time>
+
+              
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/MySQL/">MySQL</a></li></ul>
+
+
+
+              
+
+              
+
+
+              
+          </div>
+          <div class="post-content" id="post-content" itemprop="postContent">
+              
+              <p>– DDL(数据定义语言)<br>– DML(数据操作语言)<br>– DCL(数据控制语言)<br>– 注意：SQL中大小写不敏感（大小写代表的是一样的）;每条语句必须以分号结束</p>
+<h3 id="一-DDL-主要是提供数据库和表的创建、删除和修改"><a href="#一-DDL-主要是提供数据库和表的创建、删除和修改" class="headerlink" title="一.DDL - 主要是提供数据库和表的创建、删除和修改"></a>一.DDL - 主要是提供数据库和表的创建、删除和修改</h3><h4 id="1-nbsp-创建数据库-create-database-数据库名"><a href="#1-nbsp-创建数据库-create-database-数据库名" class="headerlink" title="1. &nbsp;创建数据库: create database 数据库名"></a>1. &nbsp;创建数据库: create database 数据库名</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create database school; -- 直接创建数据库</span><br><span class="line">CREATE DATABASE IF NOT EXISTS school; -- 当数据库不存在时创建数据库</span><br><span class="line">CREATE DATABASE IF NOT EXISTS school DEFAULT charset utf8; -- 创建数据库的时候指定编码方式</span><br></pre></td></tr></table></figure>
+<h4 id="2-删除数据库-DROP-DATABASE-数据库"><a href="#2-删除数据库-DROP-DATABASE-数据库" class="headerlink" title="2. 删除数据库: DROP DATABASE 数据库"></a>2. 删除数据库: DROP DATABASE 数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DROP DATABASE school;  直接删除指定数据库</span><br><span class="line">DROP DATABASE IF EXISTS school; 如果指定的数据库存在就删除数据库</span><br></pre></td></tr></table></figure>
+<h4 id="3-使用数据库：use-数据库名"><a href="#3-使用数据库：use-数据库名" class="headerlink" title="3. 使用数据库：use 数据库名;"></a>3. 使用数据库：use 数据库名;</h4><p><code>use school;</code></p>
+<h4 id="新建表数据库表"><a href="#新建表数据库表" class="headerlink" title="新建表数据库表"></a>新建表数据库表</h4><p>create table 表名(字段名1 类型1 , 字段名2 类型2,…);<br>– 注意：a.表名一般需要加前缀’t’或’tb’，<br>–      b.字段用来确定表中要存储哪些数据，字段名随便命名但是不能是关键字<br>–         c.数据类型必须是MySQL支持的数据类型<br>– 常用数据类型: int, char(size), carchar(size), text, bit, data</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table if not exists tb_student(</span><br><span class="line">stu_id int, </span><br><span class="line">stu_name varchar(20), </span><br><span class="line">stu_gender bit, </span><br><span class="line">stu_birth date</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>– create table 表名(字段名1 类型1 约束1, 字段名2 类型2 约束2,…);<br>– 常用的约束: not null - 不能为空，default - 设置默认值，unique - 值唯一，primary key - 主键约束<br>– 主键约束: 表中能够唯一标识一条记录的字段(通过主键值能够找到表中唯一一条记录)<br>– 注意：auto_increment只针对主键有效，并且主键的类型必须是数字整型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table if not exists tb_student(</span><br><span class="line">stu_id int not null auto_increment, </span><br><span class="line">stu_name varchar(20) not null, </span><br><span class="line">stu_gender bit default 1, </span><br><span class="line">stu_birth date,</span><br><span class="line">primary key(stu_id)	 -- 设置stu_id为主键(设置一个字段为主键会约束这个字段的值为唯一)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h4 id="删除数据库表"><a href="#删除数据库表" class="headerlink" title="删除数据库表:"></a>删除数据库表:</h4><p>drop table if exists 表名;<br><code>drop table if exists tb_student;</code></p>
+<h4 id="清空表中的记录"><a href="#清空表中的记录" class="headerlink" title="清空表中的记录:"></a>清空表中的记录:</h4><p>TRUNCATE TABLE 表名;<br><code>TRUNCATE TABLE tb_student;</code></p>
+<h4 id="修改数据库表"><a href="#修改数据库表" class="headerlink" title="修改数据库表:"></a>修改数据库表:</h4><p>– 添加字段: alter table 表名 add column 字段名 字段类型 约束;<br><code>alter table tb_student add column stu_score float(4,1) default 0;</code><br>– 删除字段:  alter table 表名 drop column 字段名<br><code>alter table tb_student drop column stu_score;</code></p>
+<h3 id="二、DML-数据操作语言-主要针对数据库中数据的增、删、改、查"><a href="#二、DML-数据操作语言-主要针对数据库中数据的增、删、改、查" class="headerlink" title="二、DML(数据操作语言)   - 主要针对数据库中数据的增、删、改、查"></a>二、DML(数据操作语言)   - 主要针对数据库中数据的增、删、改、查</h3><h4 id="1-nbsp-增-添加数据-记录"><a href="#1-nbsp-增-添加数据-记录" class="headerlink" title="1. &nbsp;增(添加数据/记录)"></a>1. &nbsp;增(添加数据/记录)</h4><p>– 1.1 插入数据/记录: insert into 表名 value(字段1, 字段2, 字段3,…)   - 依次给指定表中的字段赋值<br><code>insert into tb_student values(2, &#39;张三&#39;, 0, &#39;2013-9-20&#39;);</code><br>– 1.2 指定字段插入数据: insert into 表名(字段名1, 字段名2,…) value(字段1, 字段2,…)  - 以指定的字段顺序给字段复制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">insert into tb_student(stu_name, stu_gender) values(&apos;lisi&apos;, 1);  -- 插入单条数据</span><br><span class="line">insert into tb_student(stu_name, stu_gender) values</span><br><span class="line">(&apos;小米&apos;, 1),</span><br><span class="line">(&apos;李四&apos;, 0),</span><br><span class="line">(&apos;王五&apos;, 1);  -- 同时插入多条数据</span><br></pre></td></tr></table></figure>
+<p>– 值的问题: sql中的值是数字的值直接写，是字符串的值需要用引号引起来，bit类型的值只有0或1，时间可以用内容是满足时间格式字符串也可以是通过时间函数获取的值<br>– 时间函数: now() - 当前时间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">now();  -- 当前时间</span><br><span class="line">year(now());  -- 当前年</span><br><span class="line">date(now());  -- 当前日期</span><br></pre></td></tr></table></figure>
+<h4 id="2-删-删除数据-记录"><a href="#2-删-删除数据-记录" class="headerlink" title="2. 删 (删除数据/记录)"></a>2. 删 (删除数据/记录)</h4><p>– 2.1 delete from 表名;  - 删除表中所有<br><code>delete from tb_student;</code><br>– 2.2 delete from 表名 where 条件语句;  - 删除满足条件的记录(行)<br>– MySQL中的条件语句: =(判断是否相等)、&lt;&gt;(判断不等于)、&gt;(判断大于)、&lt;(判断小于)、&gt;=、&lt;=</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete from tb_student where stu_id=10;</span><br><span class="line">delete from ta_student where sti_name=&apos;zhangsan&apos; or stu_id&gt;8;</span><br></pre></td></tr></table></figure>
+<h4 id="3-改-（修改数据-记录）"><a href="#3-改-（修改数据-记录）" class="headerlink" title="3. 改 （修改数据/记录）"></a>3. 改 （修改数据/记录）</h4><p>– update 表名 set 字段1=值1, 字段2=值2,…;   - 将指定表中所有行的指定列/字段的值赋值为新值<br><code>update tb_student set stu_birth=&#39;1999-10-1&#39;, stu_gender=1;</code></p>
+<p>– update 表名 set 字段1=值1, 字段2=值2,… where 条件语句;  - 将表中满足条件的行的指定字段的值赋值为新值<br><code>uodate tb_student set stu_gender = 0 where stu_name = &#39;小米&#39;;</code></p>
+<p>– 通配符(只针对字符串有效)<br>– 通配符%: 任意个数的任意字符<br><code>uodate tb_student set stu_birth = 0 where stu_name like &#39;小%&#39;;   -- 修改名字是以‘小’开头的行的stu_birth的值</code><br>– 通配符<em>，表示一个任意字符</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uodate tb_student set stu_birth = 0 where stu_name like &apos;小_&apos;;   -- 修改名字只有两个字符，并且第一个字是小的stu_birth的值</span><br></pre></td></tr></table></figure>
+<h4 id="4-查-获取数据-记录"><a href="#4-查-获取数据-记录" class="headerlink" title="4. 查(获取数据/记录)"></a>4. 查(获取数据/记录)</h4><p>– 4.1 直接查询<br>– select <em> from 表名  - 获取指定表中所有行和列(所有的数据)<br>`select </em> from tb_student;<code>-- select 字段名1,字段名2,... from 表名  - 获取指定表中所有行的指定列</code>select stu_name from tb_student;<code>-- select * from tb_student where 条件语句  - 获取指定表中满足条件的行的所有列的数据</code>select stu_id,stu_name from tb_student where stu_name like ‘小%’;`</p>
+<p>– 4.2 列重命名<br>– 注意: 直接查询所有无法对字段名进行重命名<br>– select 字段名1 as 新字段名1, 字段名2 as 新字段名2,… from 表名;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select stu_id as &apos;学号&apos;, stu_name as &apos;姓名&apos; from tb_student;  -- 对查询结果中的stu_id、stu_name重命名</span><br></pre></td></tr></table></figure>
+<p>– 注意：这里的as可以省略,但是最好别省</p>
+<p>– 4.3 对查询的结果重新赋值(一般针对布尔数据)<br>– select if(字段相关的条件语句,值1,值2) from tb_student  - 查询指定字段，并且判断对应的值是0还是1，如果是1结果为值1，否则为值2<br>– MySQL写法: if(字段, 值1, 值2)<br><code>select stu_name,if(stu_gender,&#39;男&#39;,&#39;女&#39;) as &#39;性别&#39; from tb_student;</code><br>– 通用写法: case 字段 when 值 then 新值1 else 新值2 end</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select stu_name,case stu_gender when 1 then &apos;男&apos; else &apos;女&apos; end as &apos;性别&apos; from tb_student;</span><br></pre></td></tr></table></figure>
+<p>– 注意: 这儿的if是MySQL专有的</p>
+<p>– 4.4 对列合并<br>– select concat(字段1, 字段2,…) from 表名;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select concat(stu_name,stu_id) from tb_student;</span><br><span class="line">select concat(stu_name,&apos;:&apos;,stu_id) from tb_student;  -- 定制合并格式-- 注意: 数字和字符串都可以合并，但是bit类型的值不可以合并</span><br></pre></td></tr></table></figure>
+<p>– 4.5 模糊查询 - 查询时通过like条件来指定查询对象<br>– sql中支持逻辑运算符and(逻辑与运算)、or(逻辑或运算)和not(逻辑非)<br><code>select * from tb_student where stu_name like &#39;%米%&#39; and stu_id &lt; 110;</code></p>
+<p>– 4.6 排序<br>– select 字段1,字段2,… from 表名 order by 字段;              – 对查询结果根据字段升序排列<br>– select 字段1,字段2,… from 表名 order by 字段 desc;   – 对查询结果根据字段降序排列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from tb_student order by stu_id;		-- 根据stu_id升序排列</span><br><span class="line">select * from tb_student order by stu_id desc;  -- 根据stu_id降序排列</span><br></pre></td></tr></table></figure>
+<p>– select 字段1,字段2,… from 表名 order by 字段1 asc, 字段 desc;   – 对查询结果根据字段1升序、字段2降序联合排列，在前面的字段的优先级更高<br>select * from tb_student order by stu_gender asc, stu_id desc;</p>
+<p>– 4.7 限制<br>– select * from 表名 limit N;  - 获取查询结果的前N条记录<br><code>select * from tb_student limit 3;  -- 获取查询结果的前3条记录</code><br>– select * from 表名 limit M offset N  - 对查询结果跳过N条数据, 取M条数据出来<br><code>select * from tb_student limit 3 offset 4;</code></p>
+
+          </div>
+          
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-02-25T12:27:12.394Z" itemprop="dateUpdated">2019-02-25 20:27:12</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/02/25/MySQL基础语法/" target="_blank" rel="external">https://InsaneRisk.github.io/2019/02/25/MySQL基础语法/</a>
+        
+    </div>
+    <footer>
+        <a href="https://InsaneRisk.github.io">
+            <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" alt="Risk_Y">
+            Risk_Y
+        </a>
+    </footer>
+</blockquote>
+
+          
+              <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+              
+          
+          <div class="post-footer">
+              
+              <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/25/MySQL基础语法/&title=《MySQL基础语法》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/25/MySQL基础语法/&title=《MySQL基础语法》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+          </div>
+          
+              
+
+
+          
+      </div>
+      
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2019/02/23/Python之面试题/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python之面试题</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+      
+      
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-DDL-主要是提供数据库和表的创建、删除和修改"><span class="post-toc-number">1.</span> <span class="post-toc-text">一.DDL - 主要是提供数据库和表的创建、删除和修改</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-nbsp-创建数据库-create-database-数据库名"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.  创建数据库: create database 数据库名</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-删除数据库-DROP-DATABASE-数据库"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 删除数据库: DROP DATABASE 数据库</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-使用数据库：use-数据库名"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 使用数据库：use 数据库名;</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#新建表数据库表"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">新建表数据库表</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#删除数据库表"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">删除数据库表:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#清空表中的记录"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">清空表中的记录:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#修改数据库表"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">修改数据库表:</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、DML-数据操作语言-主要针对数据库中数据的增、删、改、查"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、DML(数据操作语言)   - 主要针对数据库中数据的增、删、改、查</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-nbsp-增-添加数据-记录"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.  增(添加数据/记录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-删-删除数据-记录"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2. 删 (删除数据/记录)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-改-（修改数据-记录）"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3. 改 （修改数据/记录）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-查-获取数据-记录"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4. 查(获取数据/记录)</span></a></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </div></div></aside>
+    
+  </article>
+  
+      <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起让每一份努力都变得有意义
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+      
+  
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.gitee.com" target="_blank">gitee</a>
+    </span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.coding.net" target="_blank">coding</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Risk_Y &copy; 2019
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/25/MySQL基础语法/&title=《MySQL基础语法》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/25/MySQL基础语法/&title=《MySQL基础语法》 — Risk_Y的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3aQY7jMAwEwPz/09nrAJvxdlPOApZKp4Fj2CofOBTJ1yte7x/r7ys/r1/fnz/z9Y2FgYHxWMb7cl1vOn/x9Z2/gZO9YWBgnMNoH52H0dnHyveGgYGBsU69K/hiYGBgtI9bSRyT5A8DAwNjlrTlwXSl9Pb1szgGBsYDGXnV/f///ZX+BgYGxqMY73IlvPZK2wz4sCsMDIytGXmAS0Yr1tsJs/1gYGCcxkhCbRs0ZzlecjB+tTEbAwPjgYzrhG82YNH+2qaVH37FwMA4hpGX5tuS3CwdLN6IgYGxNaM9rK6Uw2ZNyhkPAwPjNEaeJq50UGflPAwMjBMYeYsxT8vaoNkOe30gYWBgHMm4azAiH8hoGwa/zoxgYGBsx8gPh+2gWH5YLXqtyb8EDAyM7RhtaX42ZpEXznJk3ZHAwMDYgjEbz1opqLWH5xtmRjAwMB7IyMcgknSwGIZY/igfnoCBgbEpI9/ceno3a5QmTQUMDIy9GclD22GL2chXS/pHSwADA2NTRnsQbVPAWcuhaB5gYGAcwMiTsJX78w/RkjAwME5grMBW0sSVBgMGBsYJjHe52lSv/UzDkQsMDIytGSujErMWZp5itqU9DAyMvRltM6At+rcDHG0TFAMD4xxGMmwRlb3Kja40JzAwMDDWA27emBwOWLT5KQYGxmGMe0Nn25C4LeBiYGA8ipE3A/KEbwbL01MMDIxzGO0L2kDZltLa9BEDA2Nrxh8+QRkGY5NbegAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.4.1"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.4.1"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.4.1"></script>
+
+<!-- third-party -->
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.4.1"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>

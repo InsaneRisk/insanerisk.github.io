@@ -210,7 +210,7 @@
               <h3 id="连接云服务器"><a href="#连接云服务器" class="headerlink" title="连接云服务器"></a>连接云服务器</h3><h4 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在主机和从机上执行：ssh-keygen</span><br><span class="line">2.在从机上执行:  scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</span><br><span class="line">(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</span><br><span class="line">3.在主机中的.ssh文件夹中创建authorized_keys文件： touch authorized_keys`</span><br><span class="line">4.修改文件authorized_keys的权限: chmod 600  authorized_keys` </span><br><span class="line">5.将master.pub放进authorized_keys文件中:  cat master.pub &gt;&gt;  authorized_keys</span><br><span class="line">6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</span><br></pre></td></tr></table></figure>
 <h4 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​连接服务器：①ssh root@47.95.9.84   ②yes  ③输入密码密码</span><br><span class="line">​退出服务器：logout</span><br></pre></td></tr></table></figure>
 <figure class="image-box">
-                <a rel="Linux基本指令" href="http://img1.imgtn.bdimg.com/it/u=1668415495,646318830&fm=26&gp=0.jpg" title data-fancybox="images"><img src="http://img1.imgtn.bdimg.com/it/u=1668415495,646318830&fm=26&gp=0.jpg" alt title class></a>
+                <a rel="Linux基本指令" href="img/copy1.jpg" title data-fancybox="images"><img src="img/copy1.jpg" alt title class></a>
                 <p></p>
             </figure>
 <h4 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.安装git-bush(已安装请忽略)</span><br><span class="line">2.打开git-bush</span><br><span class="line">3.在本机系统目录下输入指令: shh-keygen</span><br><span class="line">4.修改生成公钥-秘钥对名</span><br><span class="line">5.进入.ssh文件夹查看生成公钥，并复制</span><br><span class="line">6.密码登录连接服务器</span><br><span class="line">7.将公钥复制到需要做免密登录的服务器中</span><br><span class="line">8.重新连接服务器: ssh  root@ip地址</span><br></pre></td></tr></table></figure>
@@ -242,7 +242,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-02-25T10:33:06.317Z" itemprop="dateUpdated">2019-02-25 18:33:06</time>
+    Last updated: <time datetime="2019-02-25T10:45:17.668Z" itemprop="dateUpdated">2019-02-25 18:45:17</time>
 </span><br>
 
 
