@@ -209,6 +209,10 @@
               
               <h3 id="连接云服务器"><a href="#连接云服务器" class="headerlink" title="连接云服务器"></a>连接云服务器</h3><h4 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在主机和从机上执行：ssh-keygen</span><br><span class="line">2.在从机上执行:  scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</span><br><span class="line">(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</span><br><span class="line">3.在主机中的.ssh文件夹中创建authorized_keys文件： touch authorized_keys`</span><br><span class="line">4.修改文件authorized_keys的权限: chmod 600  authorized_keys` </span><br><span class="line">5.将master.pub放进authorized_keys文件中:  cat master.pub &gt;&gt;  authorized_keys</span><br><span class="line">6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</span><br></pre></td></tr></table></figure>
 <h4 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​连接服务器：①ssh root@47.95.9.84   ②yes  ③输入密码密码</span><br><span class="line">​退出服务器：logout</span><br></pre></td></tr></table></figure>
+<figure class="image-box">
+                <a rel="Linux基本指令" href="http://img1.imgtn.bdimg.com/it/u=1668415495,646318830&fm=26&gp=0.jpg" title data-fancybox="images"><img src="http://img1.imgtn.bdimg.com/it/u=1668415495,646318830&fm=26&gp=0.jpg" alt title class></a>
+                <p></p>
+            </figure>
 <h4 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.安装git-bush(已安装请忽略)</span><br><span class="line">2.打开git-bush</span><br><span class="line">3.在本机系统目录下输入指令: shh-keygen</span><br><span class="line">4.修改生成公钥-秘钥对名</span><br><span class="line">5.进入.ssh文件夹查看生成公钥，并复制</span><br><span class="line">6.密码登录连接服务器</span><br><span class="line">7.将公钥复制到需要做免密登录的服务器中</span><br><span class="line">8.重新连接服务器: ssh  root@ip地址</span><br></pre></td></tr></table></figure>
 <h3 id="Linux指令系统"><a href="#Linux指令系统" class="headerlink" title="Linux指令系统"></a>Linux指令系统</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令名称 [命名参数] [命令对象]</span><br></pre></td></tr></table></figure>
 <h3 id="文件名颜色的含义"><a href="#文件名颜色的含义" class="headerlink" title="文件名颜色的含义"></a>文件名颜色的含义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">​默认色代表普通文件。</span><br><span class="line">​绿色代表可执行文件。</span><br><span class="line">​红色代表tar包文件。    </span><br><span class="line">​蓝色代表目录文件。  </span><br><span class="line">​水红代表图象文件。</span><br><span class="line">​青色代表链接文件。</span><br><span class="line">​黄色代表设备文件。</span><br></pre></td></tr></table></figure>
@@ -238,16 +242,16 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-02-23T04:13:57.370Z" itemprop="dateUpdated">2019-02-23 12:13:57</time>
+    Last updated: <time datetime="2019-02-25T10:33:06.317Z" itemprop="dateUpdated">2019-02-25 18:33:06</time>
 </span><br>
 
 
         
-        转载注明出处，原文地址：<a href="/2019/02/23/Linux指令/" target="_blank" rel="external">http://yoursite.com/2019/02/23/Linux指令/</a>
+        转载注明出处，原文地址：<a href="/2019/02/23/Linux指令/" target="_blank" rel="external">https://InsaneRisk.github.io/2019/02/23/Linux指令/</a>
         
     </div>
     <footer>
-        <a href="http://yoursite.com">
+        <a href="https://InsaneRisk.github.io">
             <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" alt="Risk_Y">
             Risk_Y
         </a>
@@ -272,7 +276,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -284,7 +288,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -433,7 +437,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -445,7 +449,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -457,7 +461,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3a226DMBBF0fz/T1OpT5UazD4zIRLj7aeIEvByJWcufr3wOH7H+srf62f3r6+f3fOxIUOGjMcyjuX4P+n1X8+e2XkvosqQIWMDxnqTXU+afJdMlL9LhgwZMsgmuw770s9k+WTIkCGjv+GmgWC6HDJkyJCRJpPpi3mJ7fZcXIYMGQ9kpI2Bb36+sb8hQ4aMhzCO0iAtyX7pLZiPDBkyRjNI8tnf5e4o4b3SHFqGDBmPZfADE+kmiwpkpZbAm5nIkCFjNIOEa3zDJcvBt+M4oZUhQ8ZQBi/9dwpz/e34gi1DhowNGLWgsNPsTEPSi7RWhgwZ2zDSMj0J6XhBrYaRIUPGDgweqPHHpaEhn1acbMuQIWMQozZF3m7kxzXWz79IemXIkDGa0ZkWXw7Cu+V3Q4YMGQ9npJtpLcUlC8EDzTezlSFDxmhGPx1NG5y8YRm/V4YMGUMZtdCNJ6L8W60hQ4aM0Yx00+Sp5gd+B9I5yJAhYzSDbK9kpElvLXlG/xMZMmSMY/CSVnpnujW32pYyZMjYgMHT1xqPtzyLWaoMGTJGM/gjeILaaTbUioMyZMiYyqilqST15SHj+h6S7sqQIWM2o9MfDA5shYkuDzRjmAwZMh7LSEM68tB+oS2dgwwZMnZg8IZBrd7VD/IuYDJkyJCBy/qdI638aUG9UIYMGZsx0qOofCq35NkyZMgYx+DHUgmjdkQjXSYZMmTsw0g3Zd7sTBuf/aWRIUPGOMYPp10i4GTzfXEAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aS27DMAxF0ex/0+40QBr7PoouaupqFKRGraMBI35eL7yOt/X+zedn8vz5M59Pti0ZMmQ8lnGcrq5XfnueHND53mTIkLEP49uL+WfCqx3W+d5kyJAho4tKgrUMGTJk3MH4FkY54F8EXBkyZDyEQS5ttRdfJJ/4INpycRkyZDyQwYtlf//5lv6GDBkyHsU4wpWGVB4cj4UlQ4aM2Qwe4PjlbKWdUNuPDBkydmDwkJduuncgg5QIZciQMZWRFvRJOWylzclLfr/8bsiQIWMco+Zeb0ymDYOLIqAMGTJGM2ppKi+61UI5Cd/xDVeGDBkjGGnxK20A1EY3lhqcMmTIGMogW0nbmb1jXogkQ4aMcYy2q1gYXtPgHlQNZciQMY7Bt5KOjqUtBBL642OVIUPGCMb61Y1fGXkYXUpcZciQMYiRvpgnrqTxkP4aXAxbyJAhYyijNtCQ8niYTpcMGTJ2YPDRLhLy0oSWtC1RcJchQ8ZoRnrtW2lnkq3UDkKGDBk7MIqzY/iqlya3tfanDBky9mGkRS6epna1DRrKbTJkyHgsI8WQv6aJa20ERIYMGbMZR7h4C7PWHC2OXMiQIWM0o5agkqSUX+94cG8I2TJkyHgsIw2y5Ax4s5MH3IsSngwZMjZg9CautdBcC/0yZMiQQTa6MpZx45yIDBkytmfwsl1aUCv+fxkyZGzAIEls+n1aYqtdQGXIkLEDIx1x6A2dhNTW1JQhQ8bzGD+vM7JQZIRsWwAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
