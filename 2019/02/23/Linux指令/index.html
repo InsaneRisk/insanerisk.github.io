@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     
     
-    <title>Linux基本指令 | Risk_Y的博客</title>
+    <title>Linux基础语法 | Risk_Y的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="指令">
+    <meta name="keywords" content="指令,基础">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/style.css?v=1.4.1">
@@ -141,7 +141,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>Linux基本指令</span>
+            <span>Linux基础语法</span>
             
         </div>
         
@@ -154,7 +154,7 @@
 <header class="content-header post-header">
     <img src="/img/banner.jpg" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">Linux基本指令</h1>
+        <h1 class="title">Linux基础语法</h1>
         <h5 class="subtitle">
             
                 <time datetime="2019-02-23T01:53:38.881Z" itemprop="datePublished" class="page-time">
@@ -189,7 +189,7 @@
 <div class="container body-wrap">
     <article id="post-Linux指令" class="post-article article-type-post" itemprop="blogPost">
       <div class="post-card">
-          <h1 class="post-card-title">Linux基本指令</h1>
+          <h1 class="post-card-title">Linux基础语法</h1>
           <div class="post-meta">
               <time class="post-time" title="2019-02-23 09:53:38" datetime="2019-02-23T01:53:38.881Z" itemprop="datePublished">2019-02-23</time>
 
@@ -209,14 +209,14 @@
               
               <h3 id="连接云服务器"><a href="#连接云服务器" class="headerlink" title="连接云服务器"></a>连接云服务器</h3><h4 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在主机和从机上执行：ssh-keygen</span><br><span class="line">2.在从机上执行:  scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</span><br><span class="line">(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</span><br><span class="line">3.在主机中的.ssh文件夹中创建authorized_keys文件： touch authorized_keys`</span><br><span class="line">4.修改文件authorized_keys的权限: chmod 600  authorized_keys` </span><br><span class="line">5.将master.pub放进authorized_keys文件中:  cat master.pub &gt;&gt;  authorized_keys</span><br><span class="line">6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</span><br></pre></td></tr></table></figure>
 <h4 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h4><p>​连接服务器：①ssh <a href="mailto:root@47.95.9.84" target="_blank" rel="noopener">root@47.95.9.84</a>   ②yes  ③输入密码密码<br>​退出服务器：logout</p>
-<h4 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h4><p>1.安装git-bush(已安装请忽略)<br>2.打开git-bush<br>3.在本机系统目录下输入指令: shh-keygen<br>4.修改生成公钥-秘钥对名<br>5.进入.ssh文件夹查看生成公钥，并复制<br>6.密码登录连接服务器<br>7.将公钥复制到需要做免密登录的服务器中<br>8.重新连接服务器: ssh  root@ip地址<br><figure class="image-box">
-                <a rel="Linux基本指令" href="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%951.jpg" title data-fancybox="images"><img src="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%951.jpg" alt title class></a>
+<h4 id="免密登录"><a href="#免密登录" class="headerlink" title="免密登录"></a>免密登录</h4><p>1.安装git-bush(已安装请忽略)<br>2.打开git-bush<br>3.在本机系统目录下输入指令: shh-keygen<br>4.修改生成公钥-秘钥对名<br><figure class="image-box">
+                <a rel="Linux基础语法" href="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%951.jpg" title data-fancybox="images"><img src="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%951.jpg" alt title class></a>
                 <p></p>
-            </figure><br><figure class="image-box">
-                <a rel="Linux基本指令" href="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%952.jpg" title data-fancybox="images"><img src="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%952.jpg" alt title class></a>
+            </figure><br>5.进入.ssh文件夹查看生成公钥，并复制<br><figure class="image-box">
+                <a rel="Linux基础语法" href="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%952.jpg" title data-fancybox="images"><img src="http://pnl0tc37s.bkt.clouddn.com/%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%952.jpg" alt title class></a>
                 <p></p>
-            </figure></p>
-<h3 id="Linux指令系统"><a href="#Linux指令系统" class="headerlink" title="Linux指令系统"></a>Linux指令系统</h3><p>命令名称 [命名参数] [命令对象]</p>
+            </figure><br>6.密码登录连接服务器<br>7.将公钥复制到需要做免密登录的服务器中<br>8.重新连接服务器: ssh  root@ip地址</p>
+<h3 id="Linux指令系统"><a href="#Linux指令系统" class="headerlink" title="Linux指令系统"></a>Linux指令系统</h3><p><strong>命令名称 [命名参数] [命令对象]</strong></p>
 <h3 id="文件名颜色的含义"><a href="#文件名颜色的含义" class="headerlink" title="文件名颜色的含义"></a>文件名颜色的含义</h3><p>​默认色代表普通文件。<br>​绿色代表可执行文件。<br>​红色代表tar包文件。<br>​蓝色代表目录文件。<br>​水红代表图象文件。<br>​青色代表链接文件。<br>​黄色代表设备文件。</p>
 <h3 id="日常操作"><a href="#日常操作" class="headerlink" title="日常操作"></a>日常操作</h3><h4 id="1-cd命令-进入指定目录"><a href="#1-cd命令-进入指定目录" class="headerlink" title="1.cd命令(进入指定目录)"></a>1.cd命令(进入指定目录)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">​cd 文件目录       		-- 进入指定文件目录(~相对路径 — 绝对路径)</span><br><span class="line">​cd ..       	  		-- 返回上层目录</span><br><span class="line">​cd ~        	  		-- 返回根目录</span><br><span class="line">​cd /        	  		-- 进入系统根目录</span><br></pre></td></tr></table></figure>
 <h4 id="2-ls命令-查看文件"><a href="#2-ls命令-查看文件" class="headerlink" title="2.ls命令(查看文件)"></a>2.ls命令(查看文件)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​ls				-- 显示当前目录所有非隐藏文件</span><br><span class="line">​ls -a				-- 显示当前目录中的所有文件，包含隐藏文件</span><br><span class="line">​ls -l/lh			-- 显示文件及其详细信息</span><br><span class="line">ls -S/t				-- 显示文件并按大小、/时间排序</span><br><span class="line">​ls -R			 	-- 递归显示目录中的文件</span><br></pre></td></tr></table></figure>
@@ -244,7 +244,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-02-27T11:21:28.069Z" itemprop="dateUpdated">2019-02-27 19:21:28</time>
+    Last updated: <time datetime="2019-02-27T11:28:00.059Z" itemprop="dateUpdated">2019-02-27 19:28:00</time>
 </span><br>
 
 
@@ -269,7 +269,7 @@
           
           <div class="post-footer">
               
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li></ul>
 
               <div class="page-share-wrap">
     
@@ -278,7 +278,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基础语法》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -290,7 +290,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基础语法》 — Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -439,7 +439,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基础语法》 — Risk_Y的博客&pic=http://thirdwx.qlogo.cn/mmopen/vi_32/iccyQ8B2hCPLa9icsJgz5N5LfUBtNuXAETcVZpWGbo6icTicUBnaib3t5DiaWpU5YcibLReuhy8rEcT63q5doiaGErxlWA/132" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -451,7 +451,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基本指令》 — Risk_Y的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://InsaneRisk.github.io/2019/02/23/Linux指令/&title=《Linux基础语法》 — Risk_Y的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
