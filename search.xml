@@ -3,6 +3,265 @@
   
     
     <entry>
+      <title></title>
+      <url>/2019/03/02/JSON/filed/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/2019/03/02/JSON/%E5%8F%98%E9%87%8F%E7%9A%84%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</url>
+      <content type="html"><![CDATA[<h3 id="字符串的内置函数"><a href="#字符串的内置函数" class="headerlink" title="字符串的内置函数"></a>字符串的内置函数</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:left">方法</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:right">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">str.super()</td>
+<td style="text-align:center">将输入的字母全部大写</td>
+<td style="text-align:right">print(‘HEllO PYthon’.upper())</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left">str.lower ()</td>
+<td style="text-align:center">将输入的字母全部小写</td>
+<td style="text-align:right">print(‘HEllO PYthon’.lower())</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left">str.swapcase()</td>
+<td style="text-align:center">将输入的字母大小写互换</td>
+<td style="text-align:right">print(‘HEllO PYthon’.swapcase())</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left">str.capitalize()</td>
+<td style="text-align:center">首字母大写，其余小写</td>
+<td style="text-align:right">print(‘hellO PYthon’.capitalize())</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left">str.title()</td>
+<td style="text-align:center">首字母大写</td>
+<td style="text-align:right">print(‘hellO pYthon’.title())</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left">str.ljust(width, fillchar)</td>
+<td style="text-align:center">规定固定长度，左对齐，多余位置自定义字符填充，默认空格</td>
+<td style="text-align:right">print(‘hello’.ljust(11,’=’))</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left">str.center(width, fillchar)</td>
+<td style="text-align:center">规定固定长度，居中对齐，多余位置自定义字符填充，默认空格</td>
+<td style="text-align:right">print(‘hello’.center(11,’=’))</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left">str.rjust(width, fillchar)</td>
+<td style="text-align:center">规定固定长度，右对齐，多余位置自定义字符填充，默认空格</td>
+<td style="text-align:right">print(‘hello’.rjust(11,’=’))</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left">find(str)</td>
+<td style="text-align:center">搜索指定字符串，有返回第一次出现的索引号，没有返回-1</td>
+<td style="text-align:right">print(‘hello’.find(‘l’))</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left">rfind(str)</td>
+<td style="text-align:center">从右往左搜索指定字符，有返回第一次出现的索引号，没有返回-1</td>
+<td style="text-align:right">print(‘hello’.rfind(‘l’))</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:left">index(str)</td>
+<td style="text-align:center">从右往左搜索指定字符串，有返回第一次出现的索引号，没有则显示错误</td>
+<td style="text-align:right">print(‘hello’.index(‘n’))</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left">rindex(str, beg=0, end=len(string))</td>
+<td style="text-align:center">搜索指定字符串，有返回第一次出现的索引号，没有则显示错误</td>
+<td style="text-align:right">print(‘hello’.index(‘n’))</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:left">replace(old, new [, max])</td>
+<td style="text-align:center">将old字符串替换为new字符串</td>
+<td style="text-align:right">print(‘helo’.replace(‘l’,’ll’))</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:left">lstrip([chars])</td>
+<td style="text-align:center">去除字符串左边的空格</td>
+<td style="text-align:right">print(‘ hello ‘.lstrip())</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:left">strip([chars])</td>
+<td style="text-align:center">去除字符串两边的空格</td>
+<td style="text-align:right">print(‘ hello ‘.strip())</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:left">rstrip([chars])</td>
+<td style="text-align:center">去除字符串右边的空格</td>
+<td style="text-align:right">print(‘ hello ‘.rstrip())</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:left">split(str=””, num=string.count(str))</td>
+<td style="text-align:center">按照指定字符分割字符串</td>
+<td style="text-align:right">print(‘h%e%l%l%o’.split(‘%’))</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:left">startswith(str, beg=0,end=len(string))</td>
+<td style="text-align:center">检查是否是str字符串开头，是则True，否则False</td>
+<td style="text-align:right">print(‘hello python’.startswith(‘hello’))</td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:left">endswith(str, beg=0,end=len(string))</td>
+<td style="text-align:center">检查是否是str字符串结尾，是则True，否则False</td>
+<td style="text-align:right">print(‘hello python’.endswith(‘python’))</td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:left">isalnum()</td>
+<td style="text-align:center">判断字符串是否全是数字或字母，是则True，否则False</td>
+<td style="text-align:right">print(‘hello python’.isalnum())</td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:left">isalpha()</td>
+<td style="text-align:center">判断是否全是字母，是则True，否则False</td>
+<td style="text-align:right">print(‘hello python’.isalpha())</td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:left">isdigit()</td>
+<td style="text-align:center">判断是否全是数字，是则True，否则False</td>
+<td style="text-align:right">print(‘123’.isdigit())</td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:left">isnumeric()</td>
+<td style="text-align:center">判断是否全是数字字符，是则True，否则False</td>
+<td style="text-align:right">print(‘123’.isnumeric())</td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:left">islower()</td>
+<td style="text-align:center">判断字母是否全是小写，是则True，否则False</td>
+<td style="text-align:right">print(‘Hello python’.islower())</td>
+</tr>
+<tr>
+<td style="text-align:center">25</td>
+<td style="text-align:left">isupper()</td>
+<td style="text-align:center">判断字母是否全是大写，是则True，否则False</td>
+<td style="text-align:right">print(‘HELLO PYTHON1’.isupper())</td>
+</tr>
+<tr>
+<td style="text-align:center">26</td>
+<td style="text-align:left">istitle()</td>
+<td style="text-align:center">判断首字母是否都是大写，是则True，否则False</td>
+<td style="text-align:right">print(‘Hello Python’.istitle())</td>
+</tr>
+<tr>
+<td style="text-align:center">27</td>
+<td style="text-align:left">isspace()</td>
+<td style="text-align:center">判断字符是否是空格，是则True，否则False</td>
+<td style="text-align:right">print(‘ ‘.isspace())</td>
+</tr>
+<tr>
+<td style="text-align:center">28</td>
+<td style="text-align:left">join(seq)</td>
+<td style="text-align:center">以指定字符合并字符串</td>
+<td style="text-align:right">print(‘#’.join(‘hello’))</td>
+</tr>
+<tr>
+<td style="text-align:center">29</td>
+<td style="text-align:left">len(string)</td>
+<td style="text-align:center">获取字符串长度</td>
+<td style="text-align:right">print(len(‘hello python’))</td>
+</tr>
+<tr>
+<td style="text-align:center">30</td>
+<td style="text-align:left">count(str)</td>
+<td style="text-align:center">获取子字符串在字符串中出现的次数</td>
+<td style="text-align:right">print(‘hello python’.count(‘l’))</td>
+</tr>
+<tr>
+<td style="text-align:center">31</td>
+<td style="text-align:left">expandtabs(tabsize=8)</td>
+<td style="text-align:center">把字符串中的tab符号转换为空格，默认为8</td>
+<td style="text-align:right">print(‘hello\tpython’.expandtabs(1))</td>
+</tr>
+<tr>
+<td style="text-align:center">32</td>
+<td style="text-align:left">max(str)</td>
+<td style="text-align:center">返回字符串中最大的字母</td>
+<td style="text-align:right">print(max(‘hello python’))</td>
+</tr>
+<tr>
+<td style="text-align:center">33</td>
+<td style="text-align:left">min(str)</td>
+<td style="text-align:center">返回字符串中最小的字母</td>
+<td style="text-align:right">print(min(‘hello python’))</td>
+</tr>
+<tr>
+<td style="text-align:center">34</td>
+<td style="text-align:left">zfill(width)</td>
+<td style="text-align:center">返回字符串为width长度的字符串，原字符串向右对齐</td>
+<td style="text-align:right">print(‘hello python’.zfill(20))</td>
+</tr>
+<tr>
+<td style="text-align:center">35</td>
+<td style="text-align:left">isdecimal()</td>
+<td style="text-align:center">判断字符串是否只包含十进制字符，是则True，否则False</td>
+<td style="text-align:right">print(‘123’.isdecimal())</td>
+</tr>
+</tbody>
+</table>
+<h3 id="列表内置函数"><a href="#列表内置函数" class="headerlink" title="列表内置函数"></a>列表内置函数</h3>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/2019/03/02/JSON/json/</url>
+      <content type="html"><![CDATA[<h3 id="1-什么是json数据"><a href="#1-什么是json数据" class="headerlink" title="1.什么是json数据"></a>1.什么是json数据</h3><p>json是一种具有特定语法的数据格式  </p>
+<h3 id="2-json数据的语法"><a href="#2-json数据的语法" class="headerlink" title="2.json数据的语法"></a>2.json数据的语法</h3><p>一个json数据有且只有一个数据, 这个数据的数据类型必须是json支持的数据类型</p>
+<h3 id="3-json支持的数据类型"><a href="#3-json支持的数据类型" class="headerlink" title="3.json支持的数据类型"></a>3.json支持的数据类型</h3><p>a.数字类型：包含所有的数字,包括整数、小数;<em>例如: 100, 12.5, -3.14</em><br>           注意：1)整数前面不能加’+’，2)支持科学计数法: 3e2<br>b.字符串：使用双引号括起来的数据; <em>例如：”abc”, “abc123,!”</em><br>c.布尔：只有true和false两个值<br>d.数组：相当于python的列表，用[]括起来，多个元素用逗号隔开;例如: [100, “abc”, [1, 2]]<br>e.字典：相当于python的字典, 用{}括起来，多个键值对用逗号隔开, 例如:{“a”: 10, “b”: 20, “c”: [1, 3]}<br>f. 空值：null,相当于python中的None    </p>
+<h3 id="4-python处理json数据"><a href="#4-python处理json数据" class="headerlink" title="4.python处理json数据"></a>4.python处理json数据</h3><p>python中提供了json模块，专门用来处理json数据<br>1) 将json数据转换成python数据(通过爬虫获取到别人提供的json数据,在python中处理)<br><strong>a.转换方式</strong><br>json      –&gt;       python<br>数字                 int/float<br>字符串               str, 可能双引号会变成单引号<br>布尔                 bool, 会将json中的true/false转换成True/False<br>数组                 list<br>字典                 dict<br>空值(null)           None</p>
+<p><strong>b.loads方法</strong><br>loads(字符串, encoding=’utf-8’)  - 将字符串中的json数据转换成对应的python数据<br><strong>注意:</strong> 这儿的字符串中<strong>内容</strong>必须<code>json</code>数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># ===============1.json转python===============</span><br><span class="line"># 将json中的字符串转换成python数据</span><br><span class="line">content = json.loads(&apos;&quot;abc&quot;&apos;, encoding=&apos;utf-8&apos;)</span><br><span class="line">print(content, type(content))   # abc &lt;class &apos;str&apos;&gt;</span><br><span class="line"></span><br><span class="line"># 将json中的数字转换成python数据</span><br><span class="line">content = json.loads(&apos;100&apos;, encoding=&apos;utf-8&apos;)</span><br><span class="line">print(content, type(content))</span><br><span class="line"></span><br><span class="line"># 将json中的字典转换成python数据</span><br><span class="line">message = &apos;&#123;&quot;name&quot;: &quot;张三&quot;, &quot;age&quot;: 18, &quot;sex&quot;: null, &quot;marry&quot;: true&#125;&apos;</span><br><span class="line">content = json.loads(message, encoding=&apos;utf-8&apos;)</span><br><span class="line">print(content, type(content))</span><br><span class="line">print(content[&apos;name&apos;])</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># ================读json文件=================</span><br><span class="line">with open(&apos;data.json&apos;, encoding=&apos;utf-8&apos;) as f:</span><br><span class="line">    result = json.load(f)   # 相当于 result = json.loads(f.read())</span><br><span class="line">    print(type(result), result[&apos;msg&apos;])</span><br></pre></td></tr></table></figure>
+<p>2)将python数据转换成json数据(python写后台接口将数据提供给客户端)<br><strong>a.转换方式</strong><br>python     —&gt;     json<br>int/float            数字<br>str                  字符串, 单引号会变成双引号<br>bool                 True-&gt;true; False-&gt;false<br>list/tuple           数组<br>dict                 字典<br>None                 null</p>
+<p><strong>b.dumps(对象)</strong>：将指定的对象转换成json数据, 以字符串的形式返回。这儿的对象指的就是python数据<br>            注意：返回值是字符串,并且字符串的!!!!内容!!!!是json数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">print(&apos; ===============python转json===============&apos;)</span><br><span class="line">result = json.dumps(100.23)</span><br><span class="line">print(type(result), result)    # &apos;100.23&apos;</span><br><span class="line"></span><br><span class="line">result = json.dumps(&apos;abc&apos;)</span><br><span class="line">print(type(result), result)  # &apos;&quot;abc&quot;&apos;</span><br><span class="line"></span><br><span class="line">result = json.dumps(True)</span><br><span class="line">print(type(result), result)  # &apos;true&apos;</span><br><span class="line"></span><br><span class="line">result = json.dumps([10, &apos;abc&apos;, True, None])</span><br><span class="line">print(type(result), result)  # &apos;[10, &quot;abc&quot;, true, null]&apos;</span><br><span class="line"></span><br><span class="line">result = json.dumps((10, &apos;abc&apos;, True, None))</span><br><span class="line">print(type(result), result)  # &apos;[10, &quot;abc&quot;, true, null]&apos;</span><br><span class="line"></span><br><span class="line">result = json.dumps(&#123;&apos;a&apos;: 10, &apos;b&apos;: &apos;abc&apos;, &apos;c&apos;: True, &apos;d&apos;: None&#125;)</span><br><span class="line">print(type(result), result)  # &apos;&#123;&quot;a&quot;: 10, &quot;b&quot;: &quot;abc&quot;, &quot;c&quot;: true, &quot;d&quot;: null&#125;&apos;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># ================写json文件=================</span><br><span class="line">all_student = [</span><br><span class="line">    &#123;&apos;name&apos;: &apos;小明&apos;, &apos;age&apos;: 12, &apos;tel&apos;: &apos;1237736&apos;&#125;,</span><br><span class="line">    &#123;&apos;name&apos;: &apos;yuting&apos;, &apos;age&apos;: 18, &apos;tel&apos;: &apos;23333&apos;&#125;,</span><br><span class="line">    &#123;&apos;name&apos;: &apos;Luffy&apos;, &apos;age&apos;: 20, &apos;tel&apos;: None&#125;,</span><br><span class="line">    &#123;&apos;name&apos;: &apos;zuoLuo&apos;, &apos;age&apos;: 30, &apos;tel&apos;: &apos;923736&apos;&#125;,</span><br><span class="line">]</span><br><span class="line">with open(&apos;student.json&apos;, &apos;w&apos;, encoding=&apos;utf-8&apos;) as f:</span><br><span class="line">    json.dump(all_student, f)  # 相当于 f.write(json.dumps(all_student))</span><br></pre></td></tr></table></figure>
+<h3 id="5-json文件处理"><a href="#5-json文件处理" class="headerlink" title="5.json文件处理"></a>5.json文件处理</h3><p>严格来说，json文件是文件内容是json数据的文件</p>
+<p><strong>load(文件对象)</strong>  -  将指定文件中的内容读出来，并且转换成python对应的数据。<br>                  注意：这儿的文件对象对应的文件必须是json文件<br><strong>dump(对象, 文件对象)</strong>  - 将指定对象转换成内容是json格式的字符串，然后写入指定的文件中<br>                  注意：这儿的对象对应的类型必须是能够转换成json的数据类型</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[MySQL查询的高级操作]]></title>
       <url>/2019/02/26/MySQL%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95/</url>
       <content type="html"><![CDATA[<h3 id="1-聚合查询：max-min-sum-avg-count"><a href="#1-聚合查询：max-min-sum-avg-count" class="headerlink" title="1. 聚合查询：max()/min()/sum()/avg()/count()"></a>1. 聚合查询：max()/min()/sum()/avg()/count()</h3><p><strong>select 聚合函数(字段) from 表名 where 条件;</strong>  – 按条件多表查询指定字段数据，然后将查询结果做相应的聚合运算。聚合运算的结果是最后结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO tb_score(mark) VALUES </span><br><span class="line">(89),(45.5),(100),(95),(60),(77),(90),</span><br><span class="line">(97),(49),(66),(56),(71),(80.5),(33),</span><br><span class="line">(87),(56),(74),(68),(80),(92),(34),(75);</span><br><span class="line">SELECT mark from tb_score;  -- 获取tb_score表中的所有分数</span><br><span class="line">select max(mark) as &apos;最高分&apos; from tb_score;  -- 获取tb_score表中所有分数的最高分</span><br><span class="line">select max(mark) from tb_score;</span><br><span class="line">select min(mark) from tb_score;</span><br><span class="line">select avg(mark) from tb_score where scoreid&gt;=10;  -- 计算平均值的时候如果参与运算的对象的值为null，那么这个数据不会参与计算</span><br><span class="line">select count(mark) from tb_score;</span><br></pre></td></tr></table></figure></p>
@@ -373,14 +632,7 @@
     <entry>
       <title><![CDATA[git常用指令]]></title>
       <url>/2019/02/21/git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
-      <content type="html"><![CDATA[<!-- ---
-title: git常用指令
-categories: 
-- Git
-tags:
-- 指令
---- -->
-<h3 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h3><h4 id="1-基本指令"><a href="#1-基本指令" class="headerlink" title="1.基本指令"></a>1.基本指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git init                            -- 新建git仓库      </span><br><span class="line">git add 文件/文件夹                  -- 将文件添加到缓存区中  </span><br><span class="line">git add -A                          -- 添加所有内容到缓存区中</span><br><span class="line">git stutas                          -- 查看git状态  </span><br><span class="line">git commit -m  ‘提交信息’            -- 将缓存区中的内容全部提交到git本地仓库中  </span><br><span class="line">git log                             -- 查看提交日志  </span><br><span class="line">git reset -- hard HEAD              -- 让工作目录中的内容和仓库中的内容保持一致  </span><br><span class="line">git reset --hard HEAD^              -- 回到上一个版本  </span><br><span class="line">git reset -- hard 版本号             -- 回到指定的版本  </span><br><span class="line">git checkout -- 文件名               -- 从暂存区中恢复工作目录中的内容</span><br><span class="line">                                       (让工作区中的指定文件，回到上次提交的时候的状态) </span><br><span class="line">git clone &lt;url&gt;                      -- 将服务器上的项目(仓库)克隆</span><br><span class="line">                                       (使用https地址需要输入密码，使用ssh地址需要添加公钥)  </span><br><span class="line">git remote add origin 地址           -- 关联远程仓库(只需要关联一次)</span><br><span class="line">git push [-u] origin master          -- 提交(-u在第一次提交分之的时候才用)</span><br></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<h3 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h3><h4 id="1-基本指令"><a href="#1-基本指令" class="headerlink" title="1.基本指令"></a>1.基本指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git init                            -- 新建git仓库      </span><br><span class="line">git add 文件/文件夹                  -- 将文件添加到缓存区中  </span><br><span class="line">git add -A                          -- 添加所有内容到缓存区中</span><br><span class="line">git stutas                          -- 查看git状态  </span><br><span class="line">git commit -m  ‘提交信息’            -- 将缓存区中的内容全部提交到git本地仓库中  </span><br><span class="line">git log                             -- 查看提交日志  </span><br><span class="line">git reset -- hard HEAD              -- 让工作目录中的内容和仓库中的内容保持一致  </span><br><span class="line">git reset --hard HEAD^              -- 回到上一个版本  </span><br><span class="line">git reset -- hard 版本号             -- 回到指定的版本  </span><br><span class="line">git checkout -- 文件名               -- 从暂存区中恢复工作目录中的内容</span><br><span class="line">                                       (让工作区中的指定文件，回到上次提交的时候的状态) </span><br><span class="line">git clone &lt;url&gt;                      -- 将服务器上的项目(仓库)克隆</span><br><span class="line">                                       (使用https地址需要输入密码，使用ssh地址需要添加公钥)  </span><br><span class="line">git remote add origin 地址           -- 关联远程仓库(只需要关联一次)</span><br><span class="line">git push [-u] origin master          -- 提交(-u在第一次提交分之的时候才用)</span><br></pre></td></tr></table></figure>
 <h4 id="2-分之管理"><a href="#2-分之管理" class="headerlink" title="2.分之管理"></a>2.分之管理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">创建仓库会默认给我们创建一个master分之,这个分之一般作为提交和发布分之;</span><br><span class="line">开发一般会自己创建一个develop分之，用来开发和测试;</span><br><span class="line">多人协作的时候还可能根据不同的人或者(不同的功能)创建不同的分之，用来独立开发。  </span><br><span class="line">常见分之： master(主要是合并develop), develop(主要合并下面的其他分支), 功能/人员分之(开发)  </span><br><span class="line">git branch [-a]                       -- 查看分之   </span><br><span class="line">git branch 分之名                     -- 创建分之   </span><br><span class="line">git checkout 分支名		      -- 切换分之      </span><br><span class="line">git checkout -b 分之名                -- 切换并创建新的分之   </span><br><span class="line">git diff 分之1 分之2	              -- 查看两个分之之间的差异  </span><br><span class="line">git merge 分之名		              -- 让当前分之和指定分之进行合并     </span><br><span class="line">注意: 切换分之、push、pull，这些操作前要保证工作区是clean  </span><br><span class="line">怎么避免冲突：不要发生多个分之对同一个文件在同一个版本下进行修改(和同伴确认和商量)</span><br></pre></td></tr></table></figure>
 ]]></content>
       
